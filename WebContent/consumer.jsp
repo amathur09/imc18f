@@ -36,7 +36,7 @@
 						<div id="navbar" class="navbar-collapse collapse">
 							<ul class="nav navbar-nav navbar-right">
 								<li><a href="index.jsp">Home</a></li>
-								<li class="active"><a href="consumer.jsp">Consumer</a></li>
+								<li class="active"><a href="consumer.jsp">Consumers</a></li>
 								<li><a href="maintainence.jsp">Medical Professionals</a></li>
 								<li><a href="maintainence.jsp">Researchers</a></li>
 							</ul>
@@ -54,7 +54,7 @@
 			<div class="col-md-3"></div>
 				<div class="col-md-6">
 					<div class="consumerHeader">
-					<h2>Consumer</h2>
+					<h2>Consumers</h2>
 					<p>This application allows you to search the FDA data through the following filters. Select the Drug Name, the seriousness of the event, the possible outcome that you wish. Click on "Generate Chart" and the visulization will appear below. </p>
 					</div>
 				</div>
@@ -70,7 +70,7 @@
 					<div class="col-md-1"></div>
 						<div class="col-md-10 well">
 		  					<legend>Search: Drug Name</legend>
-		  					<input id="inputSearchCriteria" type="text" class="form-control margin-bottom-20" placeholder="eg. Asprin">
+		  					<input id="inputSearchCriteria" type="text" class="form-control margin-bottom-20" placeholder="eg. aspirin">
 		  					
 		  					<legend>Filter By:</legend>
 		  					<label>Significance of the event</label>
@@ -84,12 +84,12 @@
 									<div id="divOutcomes">
 										<label>Outcomes</label>
 										<select id="selectOutcomes" class="list-group" multiple>
-											<option value="seriousnessdeath">Death</option>
+											<option value="seriousnessdeath">Results in death</option>
 										    <option value="seriousnesslifethreatening">Life-threatening</option>
-										    <option value="seriousnesshospitalization">Hospitalization</option>
-										    <option value="seriousnessdisabling">Disabling</option>
-										    <option value="seriousnesscongenitalanomali">Congenital Anomaly</option>
-										    <option value="seriousnessother">Other</option>
+										    <option value="seriousnesshospitalization">Caused/prolonged hospitalization</option>
+										    <option value="seriousnessdisabling">Disabling/Incapacitating</option>
+										    <option value="seriousnesscongenitalanomali">Congenital anomaly/birth defect</option>
+										    <option value="seriousnessother">Other medically important condition</option>
 										</select>
 									</div>
 								</div>
@@ -108,10 +108,14 @@
 				
 				<div class="col-md-8">
 						<div id="searchBreadCrumbs">
-						<ul class="breadcrumb"></ul>
+							<ul class="breadcrumb"></ul>
 						</div>
+						<legend>Adverse Events</legend>
 						<div class="row">
+						<div class="col-md-12 well">
+							<h1 class="placeholder">Your Chart Here</h1>
 							<svg class="chart"></svg>
+						</div>
 						</div>
 				</div>
 				<!-- <div class="col-md-1"></div> -->

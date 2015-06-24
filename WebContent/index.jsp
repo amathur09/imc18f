@@ -31,7 +31,7 @@
 						<div id="navbar" class="navbar-collapse collapse">
 							<ul class="nav navbar-nav navbar-right">
 								<li class="active"><a href="index.jsp">Home</a></li>
-								<li><a href="consumer.jsp">Consumer</a></li>
+								<li><a href="consumer.jsp">Consumers</a></li>
 								<li><a href="maintainence.jsp">Medical Professionals</a></li>
 								<li><a href="maintainence.jsp">Researchers</a></li>
 							</ul>
@@ -42,18 +42,21 @@
 		</div>
 		<div id="rxEffexIndexpageCaousel" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner">
-				<div class="item active"> <img alt="First slide" src="img/carouselPic_01.png" alt="Image - 01">
+				<div class="item active"> <img alt="First slide" src="img/carousel_pic04.jpg" alt="Image - 01">
+					<div class="container">
+			            <div class="carousel-caption">
+			              <h1>Committed to transparency in Adverse Events</h1>
+			            </div>
+		         	 </div>
 				</div>
-			<div class="item">
-        		<img alt="Second slide" src="img/carouselPic_02.jpg" alt="Image - 02">
-		      </div>
    			</div>
 		    </div>
 			<div class="container marketing">
 				<div class="row">
 					<div class="col-md-12">
-						<p>This is the openFDA API endpoint for adverse drug events. An adverse event is submitted to the FDA to report any undesirable experience associated with the use of a drug, including serious drug side effects, product use errors, product quality problems, and therapeutic failures.</p>
-						<p>Reporting of adverse events by healthcare professionals and consumers is voluntary in the United States. Increases in the total number of adverse events are likely caused by improved reporting. News, enforcement actions, and other phenomena can also spur reporting.</p>
+						<h2>"Transparency through timely, controlled and effective communication."</h2>
+						<p>Effectively communicating adverse events to a wide ranging audience requires thoughtful consideration to both the types of shared information and the targeted recipient. A consumer covets readily digestible information on the medicinal product they plan to or are currently taking.  Alternatively, the researcher and medical professional have a broader mandate for actionable information
+						</p>
 					</div>
 				</div>
 				<hr class="featurette-divider">
