@@ -3,12 +3,24 @@ body {
   color: #5a5a5a;
 }
 
-.content {
-	margin-top: 5em;
-}
-
 .form_section {
 	text-align: center;
+}
+
+.divOutcomesPlaceholder {
+	min-height: 6em;
+}
+
+.btn {
+	min-width: 10em;
+}
+
+.wide {
+	min-width: 100%;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px;
 }
 /* 
  CHARTS CSS
@@ -52,4 +64,3 @@ body {
   stroke: #000;
   shape-rendering: crispEdges;
 }
-

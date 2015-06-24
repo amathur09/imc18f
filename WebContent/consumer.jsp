@@ -8,10 +8,12 @@
 		
 		<!-- LIBRARY SCRIPTS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="js/lib/bootstrap.js"></script>
+		<script src="js/lib/jquery-ui.js"></script>
+		<script src="js/lib/jquery-ui.js"></script>
 		<script src="http://d3js.org/d3.v3.min.js"></script>
 		<script src="js/lib/listgroup.js"></script>
 		<!-- LIBRARY STYLESHEETS -->
+		<LINK REL="stylesheet" TYPE="text/css" HREF="css/lib/jquery-ui.css">
 		<LINK REL="stylesheet" TYPE="text/css" HREF="css/lib/bootstrap.css">
 		
 		<!-- CUSTOM STYLESHEETS -->
@@ -47,69 +49,74 @@
 	
 	<!-- WEB PAGE CONTENT -->	
 		<div class="container content">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="consumerHeader">
-				<h2>Consumer</h2>
-				<p>Text to explain the user how to use the following form</p>
-				</div>
-			</div>
-		</div>
-		
-		<hr class="featurette-divider">
-		
-		<div class="row">
-			<div class="col-md-4">
+			<div class ="carousel slide">
 			<div class="row">
-				<div class="col-md-2"></div>
-					<div class="col-md-8 form_section">
-	  					<label for="inputSearchCriteria">Drug Name:</label>
-	  					<input class="form-control" id="inputSearchCriteria" type="text">
+			<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<div class="consumerHeader">
+					<h2>Consumer</h2>
+					<p>This application allows you to search the FDA data through the following filters. Select the Drug Name, the seriousness of the event, the possible outcome that you wish. Click on "Generate Chart" and the visulization will appear below. </p>
 					</div>
-				<div class="col-md-2"></div>
+				</div>
+			<div class="col-md-3"></div>
 			</div>
 			</div>
 			
-			<div class="col-md-4">
+			<hr class="featurette-divider-thin">
+			
 			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8 form_section">
-					<div class="row">
-						<label>Significance of the event</label>
-						<div>
-							<button type="button" class="btn btn-danger">Serious</button>
-							<button type="button" class="btn btn-primary">Non-Serious</button>
+				<div class="col-md-4">
+				<div class="row ">
+					<div class="col-md-1"></div>
+						<div class="col-md-10 well">
+		  					<legend>Search: Drug Name</legend>
+		  					<input id="inputSearchCriteria" type="text" class="form-control margin-bottom-20" placeholder="eg. Asprin">
+		  					
+		  					<legend>Filter By:</legend>
+		  					<label>Significance of the event</label>
+								<div>
+									<button type="button" class="btn btn-default" id="seriousSignificant">Serious</button>
+									<button type="button" class="btn btn-default" id="nonSeriousSignificant">Non-Serious</button>
+								</div>
+							
+							<hr class="featurette-divider-thin">
+							<div class="divOutcomesPlaceholder">
+									<div id="divOutcomes">
+										<label>Outcomes</label>
+										<select id="selectOutcomes" class="list-group" multiple>
+											<option value="seriousnessdeath">Death</option>
+										    <option value="seriousnesslifethreatening">Life-threatening</option>
+										    <option value="seriousnesshospitalization">Hospitalization</option>
+										    <option value="seriousnessdisabling">Disabling</option>
+										    <option value="seriousnesscongenitalanomali">Congenital Anomaly</option>
+										    <option value="seriousnessother">Other</option>
+										</select>
+									</div>
+								</div>
+								
+								<div>
+									<button type="button" class="btn btn-info wide" id="generateChartButton" >Generate Chart</button>
+								</div>
+								<div>
+									<button type="button" class="btn btn-success wide btn-xs" id="resetButton">Reset All Fields</button>
+								</div>
 						</div>
-					</div>
+						
+					<div class="col-md-1"></div>
 				</div>
-				<div class="col-md-2"></div>
-			</div>	
-			</div>
-			
-			<div class="col-md-4">
-			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8 form_section">
-					<label>Outcomes</label>
-					<select class="list-group" multiple>
-					    <option selected="selected">Cras justo odio</option>
-					    <option>Dapibus ac facilisis in</option>
-					    <option selected="selected">Morbi leo risus</option>
-					    <option>Porta ac consectetur ac</option>
-					    <option>Vestibulum at eros</option>
-					</select>
 				</div>
-				<div class="col-md-2"></div>
+				
+				<div class="col-md-8">
+						<div id="searchBreadCrumbs">
+						<ul class="breadcrumb"></ul>
+						</div>
+						<div class="row">
+							<svg class="chart"></svg>
+						</div>
+				</div>
+				<!-- <div class="col-md-1"></div> -->
+				
 			</div>
-			</div>
-		</div>
-		<hr class="featurette-divider">
-		
-		<div class="row">
-			<div class="col-md-12">
-				<svg class="chart"></svg>
-			</div>
-		</div>
 		</div>
 		
 		<footer class="bottomFooter">
