@@ -104,7 +104,8 @@ function createRequestURL() {
 	 * 
 	 */
 	var isFirstSearchCriteria = true;
-	var searchWithThisCustomizedURL = "http://api.fda.gov/drug/event.json?";
+	var baseURL = "http://api.fda.gov/drug/event.json?";
+	var searchWithThisCustomizedURL = baseURL;
 	var urlOnlyForDrug = "";
 	var urlOnlyForSerious = "";
 	var urlOnlyForNonSerious = "";
@@ -148,10 +149,12 @@ function createRequestURL() {
 	
 	var theUnionOfSelectedOutcomes="";
 	if (selectedValues != null) {
-		searchWithThisCustomizedURL = searchWithThisCustomizedURL + "+AND+";
+		if (searchWithThisCustomizedURL !== baseURL) {
+			searchWithThisCustomizedURL = searchWithThisCustomizedURL + "+AND+";
+		} else {
+			searchWithThisCustomizedURL = searchWithThisCustomizedURL + "&search=";
+		}
 		for (var i = 0 ; i < selectedValues.length ; i++) {
-			
-			
 			if (i == 0 && i == selectedValues.length-1) { // is the first element and the last element at the same time (user selects only one element)
 				theUnionOfSelectedOutcomes = theUnionOfSelectedOutcomes+ "(" +selectedValues[i]+":1)";
 			} else if (i == 0) { // only first
@@ -161,8 +164,6 @@ function createRequestURL() {
 			} else { // is the middle element
 				theUnionOfSelectedOutcomes = theUnionOfSelectedOutcomes+selectedValues[i]+":1";
 			}
-			
-			
 			
 			//searchWithThisCustomizedURL = searchWithThisCustomizedURL + selectedValues[i]+":1";
 			arrayOfUrls.push(searchWithThisIndivuidualURL+"+AND+"+selectedValues[i]+":1" +"&count=patient.reaction.reactionmeddrapt.exact");
@@ -269,18 +270,33 @@ function initializeBreadCrumbs() {
 		}
 	}
 	
+	
+	
+	
+	
 	var allOutComes="";
 	if (selectedValues != null) {
+		var currentOutcomeRealName="";
 		for (var i = 0 ; i < selectedValues.length ; i++) {
 
+			switch (selectedValues[i]) {
+				default : ;
+				case "seriousnessdeath" :  currentOutcomeRealName = "results in death"; break;
+				case "seriousnesslifethreatening" :currentOutcomeRealName = "life-threatening"; break;
+				case "seriousnesshospitalization" : currentOutcomeRealName = "caused/prolonged hospitalization";break;
+				case "seriousnessdisabling" : currentOutcomeRealName = "disabling/Incapacitating";break;
+				case "seriousnesscongenitalanomali" : currentOutcomeRealName = "congenital anomaly/birth defect";break;
+				case "seriousnessother" : currentOutcomeRealName = "other medically important condition";break;
+			}
+			
 			if (i == 0 && i == selectedValues.length-1) { // is the first element and the last element at the same time (user selects only one element)
-				allOutComes = allOutComes+ "<li> " +selectedValues[i]+" </li>";
+				allOutComes = allOutComes+ "<li> " +currentOutcomeRealName+" </li>";
 			} else if (i == 0) { // only first
-				allOutComes = allOutComes+ "<li> " +selectedValues[i];
+				allOutComes = allOutComes+ "<li> " +currentOutcomeRealName;
 			} else if ( i == selectedValues.length-1) { // is only the last element
-				allOutComes = allOutComes+selectedValues[i]+" </li>";
+				allOutComes = allOutComes+currentOutcomeRealName+" </li>";
 			} else { // is the middle element
-				allOutComes = allOutComes+selectedValues[i];
+				allOutComes = allOutComes+currentOutcomeRealName;
 			}
 			
 			if (i !== (selectedValues.length-1)) {
@@ -297,58 +313,13 @@ function initializeBreadCrumbs() {
 
 
 function renderGraph(dataForGraph) {
-	$(".chart").html("");
+	$(".chart").html("").removeClass("well");
 	var data = dataForGraph;
-	
-	var data1 = {
-	  "labels": [
-	    'Nausea', 'Upper respitory issue', 'Heart Attack',
-	    'Vommiting', 'Fatigue'
-	  ],
-	  "series": [
-	    {
-		  "label": 'Total',
-		  "values": [140, 48, 150, 120, 130]
-		},
-		/*
-	    {
-	      label: '<serious/non-Serious>',
-	      values: [100, 40, 22, 70, 73]
-	    },
-	    {
-		      label: '<outcome 1>',
-		      values: [40, 40, 22, 70, 73]
-		    },
-		    {
-			      label: '<outcome 2>',
-			      values: [15, 40, 22, 70, 73]
-			    },
-			    {
-				      label: '<outcome 3>',
-				      values: [15, 40, 22, 70, 73]
-				    },
-				    {
-					      label: '<outcome 4>',
-					      values: [8, 40, 22, 70, 73]
-					    },
-					    {
-						      label: '<outcome 5>',
-						      values: [2, 40, 22, 70, 73]
-						    },
-						    {
-							      label: '<outcome 6>',
-							      values: [10, 40, 22, 70, 73]
-							    },*/
-	    ]
-	};
-
-
-	var chartWidth       = 550,
+	var chartWidth       = 400,
 	    barHeight        = 20,
 	    groupHeight      = barHeight * data.series.length,
 	    gapBetweenGroups = 15,
-	    spaceForLabels   = 250,
-	    spaceForLegend   = 0;
+	    spaceForLabels   = 300
 
 	// Zip the series data together (first values, second values, etc.)
 	var zippedData = [];
@@ -377,7 +348,7 @@ function renderGraph(dataForGraph) {
 
 	// Specify the chart area and dimensions
 	var chart = d3.select(".chart")
-	    .attr("width", spaceForLabels + chartWidth + spaceForLegend)
+	    .attr("width", spaceForLabels + chartWidth)
 	    .attr("height", chartHeight);
 
 	// Create bars
@@ -420,35 +391,6 @@ function renderGraph(dataForGraph) {
 	      .attr("transform", "translate(" + spaceForLabels + ", " + -gapBetweenGroups/2 + ")")
 	      .call(yAxis);
 
-	// Draw legend
-	var legendRectSize = 18,
-	    legendSpacing  = 4;
-
-	var legend = chart.selectAll('.legend')
-	    .data(data.series)
-	    .enter()
-	    .append('g')
-	    .attr('transform', function (d, i) {
-	        var height = legendRectSize + legendSpacing;
-	        var offset = -gapBetweenGroups/2;
-	        var horz = spaceForLabels + chartWidth + 40 - legendRectSize;
-	        var vert = i * height - offset;
-	        return 'translate(' + horz + ',' + vert + ')';
-	    });
-
-	legend.append('rect')
-	    .attr('width', legendRectSize)
-	    .attr('height', legendRectSize)
-	    .style('fill', function (d, i) { return color(i); })
-	    .style('stroke', function (d, i) { return color(i); });
-
-	legend.append('text')
-	    .attr('class', 'legend')
-	    .attr('x', legendRectSize + legendSpacing)
-	    .attr('y', legendRectSize - legendSpacing)
-	    .text(function (d) { return d.label; });
-
-	
 }
 
 
@@ -466,6 +408,7 @@ function setStateSerious() {
 
 function setStateNonSerious() {
 	isSerious = 2;
+	$("#selectOutcomes").val("");
 	$(".list-group-item").removeClass("active");
 	$("#nonSeriousSignificant").removeClass("btn-default").addClass("btn-primary");
 	$("#seriousSignificant").removeClass("btn-primary").addClass("btn-default");
