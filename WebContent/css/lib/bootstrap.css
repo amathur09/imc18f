@@ -347,6 +347,14 @@ hr {
   border: 0;
   border-top: 1px solid #D5D5D5;
 }
+
+.featurette-divider-thin {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #e5e5e5;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1684,7 +1692,7 @@ legend {
   margin-bottom: 20px;
   font-size: 21px;
   line-height: inherit;
-  color: #333333;
+  color: #5bc0de;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -2523,6 +2531,7 @@ fieldset[disabled] .btn-link:focus {
   font-size: 12px;
   line-height: 1.5;
   border-radius: 0px;
+  margin-top: 0.5em;
 }
 .btn-block {
   display: block;
