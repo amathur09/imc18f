@@ -212,11 +212,9 @@ function ajaxGetCustomResultsSuccess (jData, status, jqXHR) {
 }
 
 function ajaxGetCustomResultsFail (jqXHR, status, error) {
-	/**
-	 * TODO : handle Failure with care
-	 */
-	
-	alert("the call has failed! Refresh the page");
+	$(".chart").css("display","none");
+	$(".placeholder").css("display","none");
+	$("#ajaxErrorNoReturnData").fadeIn();
 }
 
 
@@ -313,7 +311,9 @@ function initializeBreadCrumbs() {
 
 
 function renderGraph(dataForGraph) {
-	$(".chart").html("").removeClass("well");
+	$(".placeholder").css("display","none");
+	$("#ajaxErrorNoReturnData").css("display","none");
+	$(".chart").fadeIn();
 	var data = dataForGraph;
 	var chartWidth       = 400,
 	    barHeight        = 20,

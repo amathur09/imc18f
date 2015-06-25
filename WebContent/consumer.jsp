@@ -31,7 +31,7 @@
 					<div class="container">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-							<a class="navbar-brand" href="#"><img src="img/18flogo.png" alt="RxEffexS" width="100" height="130"></a>
+							<a class="navbar-brand" href="index.jsp"><img src="img/18flogo.png" alt="RxEffexS" width="100" height="130"></a>
 						</div>
 						<div id="navbar" class="navbar-collapse collapse">
 							<ul class="nav navbar-nav navbar-right">
@@ -49,17 +49,16 @@
 	
 	<!-- WEB PAGE CONTENT -->	
 		<div class="container content">
-			<div class ="carousel slide">
+			
 			<div class="row">
-			<div class="col-md-3"></div>
-				<div class="col-md-6">
+			<div class="col-md-2"></div>
+				<div class="col-md-8">
 					<div class="consumerHeader">
 					<h2>Consumers</h2>
 					<p>This application allows you to search the FDA data through the following filters. Select the Drug Name, the seriousness of the event, the possible outcome that you wish. Click on "Generate Chart" and the visulization will appear below. </p>
 					</div>
 				</div>
-			<div class="col-md-3"></div>
-			</div>
+			<div class="col-md-2"></div>
 			</div>
 			
 			<hr class="featurette-divider-thin">
@@ -67,8 +66,7 @@
 			<div class="row">
 				<div class="col-md-4">
 				<div class="row ">
-					<div class="col-md-1"></div>
-						<div class="col-md-10 well">
+						<div class="col-md-11 well">
 		  					<legend>Search: Drug Name</legend>
 		  					<input id="inputSearchCriteria" type="text" class="form-control margin-bottom-20" placeholder="eg. aspirin">
 		  					
@@ -113,7 +111,10 @@
 						<legend>Adverse Events</legend>
 						<div class="row">
 						<div class="col-md-12 well">
-							<h1 class="placeholder">Your Chart Here</h1>
+							<h4 class="placeholder form_section">Your chart will appear here after you hit the "Generate Chart" button with your required criteria. </h4>
+							<div class="alert alert-dismissable alert-danger" id="ajaxErrorNoReturnData">
+				              <strong>Oh snap!</strong> Your your search criteria did not give a result. Please change some parameters and try again.
+				            </div>
 							<svg class="chart"></svg>
 						</div>
 						</div>
@@ -123,9 +124,12 @@
 			</div>
 		</div>
 		
-		<footer class="bottomFooter">
-      			<div class="container">
-        			<p class="text-muted">Place sticky footer content here.</p>
+			<footer class="bottomFooter">
+      			<div class="container form_section text-muted">
+      				<h5><strong>Information Management Consultants, Inc</strong></h5>
+      				<h6>703-871-8700 | <a href="http://www.IMC.com">www.IMC.com</a> | <a email="marketing@imc.com">marketing@imc.com</a></h6>
+      				<h6>Additional Information: <a href="https://clinicaltrials.com">https://clinicaltrials.com</a></h6>
+        			<h6>&copy2015 by IMC</h6>
       			</div>
    			</footer>
 
