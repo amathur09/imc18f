@@ -311,6 +311,7 @@ function initializeBreadCrumbs() {
 
 
 function renderGraph(dataForGraph) {
+	$(".chart").html("");
 	$(".placeholder").css("display","none");
 	$("#ajaxErrorNoReturnData").css("display","none");
 	$(".chart").fadeIn();
