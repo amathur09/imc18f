@@ -1,5 +1,8 @@
 # imc18f
 # This is the README.md file for imc18f repository
+<<<<<<< HEAD
+# make all the changes here and make a pull request
+=======
 Company Introduction
 Information Management Consultants (IMC) is a large company founded in 1981 with headquarters in Reston, Virginia. IMC has proudly served the Federal government and private sector for more than 34 years, applying information technology to develop, automate, and improve mission critical business processes, especially enterprise content management systems, as well as back office support systems. IMC has developed large and small projects using waterfall, agile, or hybrid processes as required by our clients. We have matured our processes and delivery options as the industry has evolved. We have operated in client and IMC hosted environments, and now also operate in the public cloud as an Amazon Web Services (AWS) consulting partner. 
 
@@ -24,3 +27,4 @@ An Agile development and test methodology was followed to create Epics from the 
 
 Delivery
 IMC’s prototype is being delivered as a web portal https://www.rxeffex.com and associated artifacts located in a Git repository at https://github.com/amathur09/imc18f 
+>>>>>>> 41cb6b14d2fca96fad8424ca2c0a80f19666cd94
