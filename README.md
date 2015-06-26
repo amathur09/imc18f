@@ -1,8 +1,3 @@
-# imc18f
-# This is the README.md file for imc18f repository
-<<<<<<< HEAD
-# make all the changes here and make a pull request
-=======
 
 IMC’s prototype is being delivered as a web portal http://www.rxeffex.com and associated artifacts located in a Git repository at https://github.com/amathur09/imc18f 
 
@@ -18,5 +13,23 @@ The home page welcomes the user and provides descriptive text to explain the pur
 
 An Agile development and test methodology was followed to create Epics from the Use Cases.  The Epics were used to create User Stories. Testers used the User Stories to generate test cases. All the test cases were linked to the user stories to keep traceability. Unit, functional, system, integration and regression testing were performed. Zephyr, a JIRA plug in tool was used for test case development and execution. The manual tests performed during the sprint were automated with Selenium. Defects were tracked in Jira.
 
- 
->>>>>>> 41cb6b14d2fca96fad8424ca2c0a80f19666cd94
+File X shows the assignment of labor categories and responsibility for the prototype. 
+File GSA Agile Services RFQ IMC Response Team.doc provides evidence that IMC followed the guidelines in Pool Three 
+File X contains evidence for the Interviews, Daily progress reports, WebEx meetings that were conducted to involve people in building the prototype.
+Files X and Y show the use of WIX to create wireframes, discussions with NIH adverse event customer and the use of iterative approach.
+File X shows the style guide for the user interface that the developers followed
+File X shows how the agile approach enabled feedback in subsequent versions.
+File X demonstrates the use of HTML5 and JavaScript to create responsive web designs that work on multiple devices. 
+File X demonstrates the use of modern and open source technologies like Tomcat, Git, Maven, Java, JavaScript, HTML5 and Selenium.
+File X shows how IMC leveraged Amazon Web Services IaaS for the prototype
+File X demonstrates the use of continuous integration system, automated test runs and continuous deployment of code to IaaS / PaaS provider
+File X demonstrates the use of AWS tools for monitoring and alerts
+File X demonstrates the use of AWS Amazon Machine Image to deploy software in a container
+File X shows the  agile approach enabled feedback in subsequent versions.
+File X shows the creation of documents to support the installation of the prototype on another machine
+File X shows the free and open source technologies used
+All the files mentioned above can be found at https://github.com/amathur09/imc18f/tree/master/documentation
+16 The source code at https://github.com/amathur09/imc18f/tree/master/WebContent demonstrates the use of API from open.fda.giv
+13 File X at https://github.com/amathur09/imc18f  demonstrates the use of GitHub for configuration management 
+11 File X at https://github.com/amathur09/imc18f/tree/master/tests  contains test scripts that the developers wrote for checking functionality
+6 File X at https://github.com/amathur09/imc18f/tree/master/tests demonstrates how usability tests were conducted with people  
