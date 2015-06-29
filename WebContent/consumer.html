@@ -2,9 +2,9 @@
 <html>
 <head>
 		
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<meta charset=ISO-8859-1">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta http-equiv="Cache-control" content="max-age=43200, private">
+		<meta http-equiv="Cache-control" content="max-age=43200, public">
 		<title>Adverse Events</title>
 		
 		<!-- LIBRARY SCRIPTS -->
@@ -35,8 +35,9 @@
 		<!-- CUSTOM SCRIPTS -->
 		<!-- <script src="js/min/consumer.min.js"></script> -->
 		
-			<!-- UN-MINIFIED REFERENCE -->
-			<!-- <script src="js/consumer.js"></script> -->
+		<!--  !! LOADING ALL THE BLOCKING JS AT THE END OF THE PAGE SO THE RENDERING OF THE PAGE IS NOT DELAYED !! -->
+		
+			
 </head>
 <body>
 
@@ -129,18 +130,22 @@
 				</div>
 				
 				<div class="col-md-8">
-						<div id="searchBreadCrumbs">
-							<ul class="breadcrumb"></ul>
+						
+						<div id="searchBreadCrumbs" class="row">
+							<legend>Search results for</legend><ul class="breadcrumb"></ul>
 						</div>
-						<legend>Adverse Events</legend>
 						<div class="row">
+						<legend>Adverse Events</legend>
 						<div class="col-md-12 well chartWell">
 							<h4 class="placeholder form_section">Your chart will appear here after you hit the "Generate Chart" button with your required criteria. </h4>
 							<div class="alert alert-dismissable alert-danger" id="ajaxErrorNoReturnData">
 				              <strong>Oh snap!</strong> Your search criteria did not give a result. Please change some parameters and try again.
 				            </div>
 							<svg class="chart"></svg>
-						</div>
+							<hr class="featurette-divider-thin">
+							<div class="alert alert-dismissable alert-info" id="exitLinktoFares">
+				            	Click <a target="_blank" href = "http://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/"> here </a>to learn about the FAERS data that feeds this graphic. 
+				            </div>
 						</div>
 				</div>
 				<!-- <div class="col-md-1"></div> -->
@@ -158,9 +163,12 @@
    			</footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/min/lib/bootstrap.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 		<script src="js/lib/d3.v3.min.js"></script>
 		<script src="js/min/lib/listgroup.min.js"></script>
 		<script src="js/min/consumer.min.js"></script>
+		<!-- UN-MINIFIED REFERENCE -->
+			<!-- <script src="js/consumer.js"></script> -->
 </body>
 </html>
