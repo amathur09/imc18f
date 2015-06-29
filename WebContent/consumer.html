@@ -3,24 +3,39 @@
 <head>
 		
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<meta name="viewport" content="width=320, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Adverse Events</title>
 		
 		<!-- LIBRARY SCRIPTS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="js/lib/jquery-ui.js"></script>
-		<script src="js/lib/jquery-ui.js"></script>
-		<script src="http://d3js.org/d3.v3.min.js"></script>
-		<script src="js/lib/listgroup.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="js/lib/d3.v3.min.js"></script>
+		<script src="js/min/lib/listgroup.min.js"></script>
+		
+			<!-- UN-MINIFIED REFERENCE -->
+			<!-- <script src="js/lib/listgroup.js"></script> -->
+		
+		
 		<!-- LIBRARY STYLESHEETS -->
-		<LINK REL="stylesheet" TYPE="text/css" HREF="css/lib/jquery-ui.css">
-		<LINK REL="stylesheet" TYPE="text/css" HREF="css/lib/bootstrap.css">
+		
+		<LINK REL="stylesheet" TYPE="text/css" HREF="css/min/lib/jquery-ui.min.css">
+		<LINK REL="stylesheet" TYPE="text/css" HREF="css/min/lib/bootstrap.min.css">
+		
+			<!-- UNMINIFIED REFERENCES -->
+			<!-- <LINK REL="stylesheet" TYPE="text/css" HREF="css/lib/jquery-ui.css">
+			<LINK REL="stylesheet" TYPE="text/css" HREF="css/lib/bootstrap.css"> -->
 		
 		<!-- CUSTOM STYLESHEETS -->
-		<LINK REL="stylesheet" TYPE="text/css" HREF="css/consumer.css">
+		<LINK REL="stylesheet" TYPE="text/css" HREF="css/min/consumer.min.css">
+			
+			<!-- UN MINIFIED REFERENCES -->
+			<!-- <LINK REL="stylesheet" TYPE="text/css" HREF="css/consumer.css"> -->
 		
 		<!-- CUSTOM SCRIPTS -->
-		<script src="js/consumer.js"></script>
+		<script src="js/min/consumer.min.js"></script>
+		
+			<!-- UN-MINIFIED REFERENCE -->
+			<!-- <script src="js/consumer.js"></script> -->
 </head>
 <body>
 
@@ -30,7 +45,15 @@
 				<nav class="navbar navbar-default navbar-static-top">
 					<div class="container">
 						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+								
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								
+							</button>
 							<a class="navbar-brand" href="index.html"><img src="img/18flogo.png" alt="RxEffexS" width="100" height="130"></a>
 						</div>
 						<div id="navbar" class="navbar-collapse collapse">
@@ -55,7 +78,7 @@
 				<div class="col-md-8">
 					<div class="consumerHeader">
 					<h2>Consumers</h2>
-					<p>This application allows you to search the FDA data through the following filters. Select the Drug Name, the seriousness of the event, the possible outcome that you wish. Click on "Generate Chart" and the visulization will appear below. </p>
+					<p>This application allows you to search the FDA Adverse Event Reporting System to return adverse event counts. Select the Drug Name, the seriousness of the event, the possible seriousness outcome that you want displayed.  Click on "Generate Chart" and the (FAERS) visualization will appear.</p>				
 					</div>
 				</div>
 			<div class="col-md-2"></div>
@@ -110,7 +133,7 @@
 						</div>
 						<legend>Adverse Events</legend>
 						<div class="row">
-						<div class="col-md-12 well">
+						<div class="col-md-12 well chartWell">
 							<h4 class="placeholder form_section">Your chart will appear here after you hit the "Generate Chart" button with your required criteria. </h4>
 							<div class="alert alert-dismissable alert-danger" id="ajaxErrorNoReturnData">
 				              <strong>Oh snap!</strong> Your search criteria did not give a result. Please change some parameters and try again.

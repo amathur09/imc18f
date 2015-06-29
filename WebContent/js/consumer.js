@@ -64,7 +64,7 @@ function populateDrugNameField() {
 	
 	var getAllMedicinalProducts = $.ajax({
 		type:"get",
-		url: "http://api.fda.gov/drug/event.json?&count=patient.drug.medicinalproduct",
+		url: "https://api.fda.gov/drug/event.json?&count=patient.drug.medicinalproduct",
 		crossDomain :true
 	 });
 	
@@ -104,7 +104,7 @@ function createRequestURL() {
 	 * 
 	 */
 	var isFirstSearchCriteria = true;
-	var baseURL = "http://api.fda.gov/drug/event.json?";
+	var baseURL = "https://api.fda.gov/drug/event.json?";
 	var searchWithThisCustomizedURL = baseURL;
 	var urlOnlyForDrug = "";
 	var urlOnlyForSerious = "";
@@ -316,11 +316,11 @@ function renderGraph(dataForGraph) {
 	$("#ajaxErrorNoReturnData").css("display","none");
 	$(".chart").fadeIn();
 	var data = dataForGraph;
-	var chartWidth       = 400,
+	var chartWidth       = $(".chartWell").width()*5/7,
 	    barHeight        = 20,
 	    groupHeight      = barHeight * data.series.length,
 	    gapBetweenGroups = 15,
-	    spaceForLabels   = 300
+	    spaceForLabels   = $(".chartWell").width()*2/7;
 
 	// Zip the series data together (first values, second values, etc.)
 	var zippedData = [];
