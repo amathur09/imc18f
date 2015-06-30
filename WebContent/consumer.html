@@ -2,25 +2,42 @@
 <html>
 <head>
 		
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<meta name="viewport" content="width=320, initial-scale=1" />
+		<meta charset=ISO-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="Cache-control" content="max-age=43200, public">
 		<title>Adverse Events</title>
 		
 		<!-- LIBRARY SCRIPTS -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="js/lib/jquery-ui.js"></script>
-		<script src="js/lib/jquery-ui.js"></script>
-		<script src="http://d3js.org/d3.v3.min.js"></script>
-		<script src="js/lib/listgroup.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="js/lib/d3.v3.min.js"></script>
+		<script src="js/min/lib/listgroup.min.js"></script> -->
+		
+			<!-- UN-MINIFIED REFERENCE -->
+			<!-- <script src="js/lib/listgroup.js"></script> -->
+		
+		
 		<!-- LIBRARY STYLESHEETS -->
-		<LINK REL="stylesheet" TYPE="text/css" HREF="css/lib/jquery-ui.css">
-		<LINK REL="stylesheet" TYPE="text/css" HREF="css/lib/bootstrap.css">
+		
+		<LINK REL="stylesheet" TYPE="text/css" HREF="css/min/lib/jquery-ui.min.css">
+		<LINK REL="stylesheet" TYPE="text/css" HREF="css/min/lib/bootstrap.min.css">
+		
+			<!-- UNMINIFIED REFERENCES -->
+			<!-- <LINK REL="stylesheet" TYPE="text/css" HREF="css/lib/jquery-ui.css">
+			<LINK REL="stylesheet" TYPE="text/css" HREF="css/lib/bootstrap.css"> -->
 		
 		<!-- CUSTOM STYLESHEETS -->
-		<LINK REL="stylesheet" TYPE="text/css" HREF="css/consumer.css">
+		<LINK REL="stylesheet" TYPE="text/css" HREF="css/min/consumer.min.css">
+			
+			<!-- UN MINIFIED REFERENCES -->
+			<!-- <LINK REL="stylesheet" TYPE="text/css" HREF="css/consumer.css"> -->
 		
 		<!-- CUSTOM SCRIPTS -->
-		<script src="js/consumer.js"></script>
+		<!-- <script src="js/min/consumer.min.js"></script> -->
+		
+		<!--  !! LOADING ALL THE BLOCKING JS AT THE END OF THE PAGE SO THE RENDERING OF THE PAGE IS NOT DELAYED !! -->
+		
+			
 </head>
 <body>
 
@@ -30,7 +47,15 @@
 				<nav class="navbar navbar-default navbar-static-top">
 					<div class="container">
 						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+								
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								
+							</button>
 							<a class="navbar-brand" href="index.html"><img src="img/18flogo.png" alt="RxEffexS" width="100" height="130"></a>
 						</div>
 						<div id="navbar" class="navbar-collapse collapse">
@@ -51,14 +76,14 @@
 		<div class="container content">
 			
 			<div class="row">
-			<div class="col-md-2"></div>
-				<div class="col-md-8">
-					<div class="consumerHeader">
-					<h2>Consumers</h2>
-					<p>This application allows you to search the FDA data through the following filters. Select the Drug Name, the seriousness of the event, the possible outcome that you wish. Click on "Generate Chart" and the visulization will appear below. </p>
+				<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<div class="consumerHeader">
+						<h2>Consumers</h2>
+						<p>This application allows you to search the FDA Adverse Event Reporting System to return adverse event counts. Select the Drug Name, the seriousness of the event, the possible seriousness outcome that you want displayed.  Click on "Generate Chart" and the (FAERS) visualization will appear.</p>				
+						</div>
 					</div>
-				</div>
-			<div class="col-md-2"></div>
+				<div class="col-md-2"></div>
 			</div>
 			
 			<hr class="featurette-divider-thin">
@@ -105,23 +130,28 @@
 				</div>
 				
 				<div class="col-md-8">
-						<div id="searchBreadCrumbs">
-							<ul class="breadcrumb"></ul>
+						
+						<div id="searchBreadCrumbs" class="row">
+							<legend>Search results for</legend><ul class="breadcrumb"></ul>
 						</div>
-						<legend>Adverse Events</legend>
 						<div class="row">
-						<div class="col-md-12 well">
+						<legend>Adverse Events</legend>
+						<div class="col-md-12 well chartWell">
 							<h4 class="placeholder form_section">Your chart will appear here after you hit the "Generate Chart" button with your required criteria. </h4>
 							<div class="alert alert-dismissable alert-danger" id="ajaxErrorNoReturnData">
 				              <strong>Oh snap!</strong> Your search criteria did not give a result. Please change some parameters and try again.
 				            </div>
 							<svg class="chart"></svg>
-						</div>
+							<hr class="featurette-divider-thin">
+							<div class="alert alert-dismissable alert-info" id="exitLinktoFares">
+				            	Click <a target="_blank" href = "http://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/"> here </a>to learn about the FAERS data that feeds this graphic. 
+				            </div>
 						</div>
 				</div>
 				<!-- <div class="col-md-1"></div> -->
 				
 			</div>
+		</div>
 		</div>
 		
 			<footer class="bottomFooter">
@@ -130,8 +160,17 @@
       				<h6>703-871-8700 | <a href="http://www.IMC.com">www.IMC.com</a> | <a email="marketing@imc.com">marketing@imc.com</a></h6>
       				<h6>Additional Information: <a href="https://clinicaltrials.com">https://clinicaltrials.com</a></h6>
         			<h6>&copy2015 by IMC</h6>
+        			<span id="siteseal"><script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=YDtW5XakcdKG3AaczDFaj7AL7Jk1zz5T5czqzLeWrjsnwTpFAYTKdZY87Xxt"></script></span>
       			</div>
    			</footer>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/min/lib/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="js/lib/d3.v3.min.js"></script>
+		<script src="js/min/lib/listgroup.min.js"></script>
+		<script src="js/min/consumer.min.js"></script>
+		<!-- UN-MINIFIED REFERENCE -->
+			<!-- <script src="js/consumer.js"></script> -->
 </body>
 </html>
