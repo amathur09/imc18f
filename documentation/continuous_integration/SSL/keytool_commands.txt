@@ -1,0 +1,3 @@
+keytool -import -alias root -keystore tomcat.keystore -trustcacerts -file gd_bundle-g2-g1.crt
+keytool -import -alias intermed -keystore tomcat.keystore -trustcacerts -file gdig2.crt
+keytool -import -alias tomcat -keystore tomcat.keystore -trustcacerts -file 7b1f9e33efd61879.crt
