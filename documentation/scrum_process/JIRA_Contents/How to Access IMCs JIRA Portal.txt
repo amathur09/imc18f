@@ -1,0 +1,6 @@
+Here is the information you will need to access IMC's JIRA Project Portal for the 18F Prototype:
+
+1. The Project portal is available at: http://jira.public.imc.com/browse/EIGHTEENF/
+2. The Agile Board is available at: http://jira.public.imc.com/secure/RapidBoard.jspa
+3. The user account we created for 18F is: "18F_User"
+4. The account password is: "18F_JIRA_User"
