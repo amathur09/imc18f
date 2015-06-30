@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://rxeffex.com/test" xmlns:rxeffex="http://rxeffex.com/test" elementFormDefault="qualified">
+
+<!-- definition of types -->
+<xs:simpleType name="operatorType">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="contains|eq|neq|lt|lte|gt|gte"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="booleanType">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="yes|no"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="actionType">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="input|click|clear"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="browserType">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="(silent|firefox|chrome|ie|safari)?"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="mandatorystring">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[\w\W\s\S\d\D]+"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="digitstring">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[\d]*"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<!-- definition of simple elements -->
+<xs:element name="id" type="rxeffex:digitstring"/>
+
+<!-- definition of complex elements -->
+<xs:element name="input">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="fieldId" type="rxeffex:mandatorystring" nillable="false"/>
+			<xs:element name="value" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="waitTime" type="rxeffex:digitstring" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="action" type="rxeffex:actionType" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="expected">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="operator" type="rxeffex:operatorType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="fieldId" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="value" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="waitTime" type="rxeffex:digitstring" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="inputs">
+	<xs:complexType>
+		<xs:sequence>			
+			<xs:element ref="rxeffex:input" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="expecteds">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="newWindow" type="rxeffex:booleanType" minOccurs="0" maxOccurs="1"/>
+			<xs:element ref="rxeffex:expected" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="postActions">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="rxeffex:input" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="browsers">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="browser" type="rxeffex:browserType" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="testCase">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="name" type="rxeffex:mandatorystring" nillable="false"/>
+			<xs:element name="url" type="rxeffex:mandatorystring" nillable="false"/>
+			<xs:element name="timeLimit" type="rxeffex:digitstring" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="waitPageLoad" type="rxeffex:digitstring" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element ref="rxeffex:inputs" minOccurs="0" maxOccurs="1"/>
+			<xs:element ref="rxeffex:expecteds" minOccurs="0" maxOccurs="1"/>
+			<xs:element ref="rxeffex:postActions" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="testCases">
+  <xs:complexType>
+    <xs:sequence>
+		<xs:element ref="rxeffex:testCase" minOccurs="0" maxOccurs="unbounded"/>
+	</xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="scenario">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="name" type="rxeffex:mandatorystring" nillable="false"/>
+      		<xs:element ref="rxeffex:browsers" minOccurs="0" maxOccurs="1"/>
+      		<xs:element ref="rxeffex:testCases" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="scenarios">
+  <xs:complexType>
+    <xs:sequence>
+		<xs:element ref="rxeffex:scenario" minOccurs="0" maxOccurs="unbounded"/>
+	</xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="regression">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="name" type="rxeffex:mandatorystring" nillable="false"/>
+			<xs:element name="runBy" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="outFileRoot" type="rxeffex:mandatorystring" nillable="false"/> 			
+      		<xs:element ref="rxeffex:scenarios" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema> 
