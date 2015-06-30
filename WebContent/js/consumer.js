@@ -268,10 +268,6 @@ function initializeBreadCrumbs() {
 		}
 	}
 	
-	
-	
-	
-	
 	var allOutComes="";
 	if (selectedValues != null) {
 		var currentOutcomeRealName="";
@@ -282,7 +278,7 @@ function initializeBreadCrumbs() {
 				case "seriousnessdeath" :  currentOutcomeRealName = "results in death"; break;
 				case "seriousnesslifethreatening" :currentOutcomeRealName = "life-threatening"; break;
 				case "seriousnesshospitalization" : currentOutcomeRealName = "caused/prolonged hospitalization";break;
-				case "seriousnessdisabling" : currentOutcomeRealName = "disabling/Incapacitating";break;
+				case "seriousnessdisabling" : currentOutcomeRealName = "disabling/incapacitating";break;
 				case "seriousnesscongenitalanomali" : currentOutcomeRealName = "congenital anomaly/birth defect";break;
 				case "seriousnessother" : currentOutcomeRealName = "other medically important condition";break;
 			}
@@ -315,6 +311,7 @@ function renderGraph(dataForGraph) {
 	$(".placeholder").css("display","none");
 	$("#ajaxErrorNoReturnData").css("display","none");
 	$(".chart").fadeIn();
+	$("#exitLinktoFares").fadeIn();
 	var data = dataForGraph;
 	var chartWidth       = $(".chartWell").width()*5/7,
 	    barHeight        = 20,
