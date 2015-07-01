@@ -1,27 +1,21 @@
 var isSerious = 0; // 1 = serious , 2 = not Serious, 0 = not assigned
 
-
-
 $(document).ready(function() {
-	
-	
-	
 	var nonSeriousSignificant = $("#nonSeriousSignificant");
 	var seriousSignificant = $("#seriousSignificant");
 	var divOutcomes = $("#divOutcomes");
 	var generateChartButton = $("#generateChartButton");
-	var drugName = $("#inputSearchCriteria");
 	var resetButton = $("#resetButton");
 	
 	//var selectOutcomes = $("#selectOutcomes");
 
-	nonSeriousSignificant.off("click"); // unbinding the on click at the end of the function
+	nonSeriousSignificant.off("click"); // un-binding the on click at the end of the function
 	nonSeriousSignificant.on("click",function(){
 		divOutcomes.fadeOut();
 		setStateNonSerious();
 		});
 	
-	seriousSignificant.off("click"); // unbinding the on click at the end of the function
+	seriousSignificant.off("click"); // un-binding the on click at the end of the function
 	seriousSignificant.on("click",function(){
 		divOutcomes.fadeIn();
 		setStateSerious();
@@ -34,22 +28,6 @@ $(document).ready(function() {
 	
 	resetButton.off("click");
 	resetButton.on("click",resetFields);
-	
-	/*var myAjaxCall = $.ajax({
-		type:"get",
-		url: "http://api.fda.gov/drug/event.json?&count=patient.drug.drugindication",
-		crossDomain :true
-	 });
-	
-	myAjaxCall.done (function (jData, status, jqXHR) {
-		console.log(jData);
-		//alert("success");
-	});
-	
-	myAjaxCall.fail(function(jqXHR, status, error){
-		console.log(jqXHR);
-		//alert("fail");
-	});*/
 	
 }); //  END OF READY
 
@@ -74,6 +52,12 @@ function populateDrugNameField() {
 	
 }
 
+/**
+ * @param jData : json response
+ * @param status : text status - 200 if OK
+ * @param jqXHR : HMLHttpResponse object
+ */
+
 function getAllMedicinalProductsSuccess (jData, status, jqXHR) {
 	var arrayOfAllMedicinalProducts = [];
 	
@@ -91,7 +75,7 @@ function getAllMedicinalProductsFail (jqXHR, status, error) {
 	 * TODO : handle Failure with care
 	 */
 	
-	alert("the call has failed! Refresh the page");
+	//alert("the call has failed! Refresh the page");
 }
 
 
@@ -106,10 +90,6 @@ function createRequestURL() {
 	var isFirstSearchCriteria = true;
 	var baseURL = "https://api.fda.gov/drug/event.json?";
 	var searchWithThisCustomizedURL = baseURL;
-	var urlOnlyForDrug = "";
-	var urlOnlyForSerious = "";
-	var urlOnlyForNonSerious = "";
-	var arrayOfAllGetCalls=[];
 	
 	var userInputDrugName = $("#inputSearchCriteria").val();
 	if (userInputDrugName != "") { // user has entered some value. use it in the search url. else do nothing.
@@ -120,7 +100,6 @@ function createRequestURL() {
 		} 
 		searchWithThisCustomizedURL = searchWithThisCustomizedURL + "medicinalproduct:" + userInputDrugName;
 		urlOnlyForDrug = searchWithThisCustomizedURL + "&count=patient.reaction.reactionmeddrapt.exact";
-		arrayOfAllGetCalls.push({"urlOnlyForDrug" : urlOnlyForDrug});
 	}
 	
 	
@@ -135,17 +114,13 @@ function createRequestURL() {
 		if (isSerious == 1) {
 			searchWithThisCustomizedURL = searchWithThisCustomizedURL + "serious:1";
 			urlOnlyForSerious = searchWithThisCustomizedURL + "&count=patient.reaction.reactionmeddrapt.exact";
-			arrayOfAllGetCalls.push({"urlOnlyForSerious":urlOnlyForSerious});
 		} else { //
 			searchWithThisCustomizedURL = searchWithThisCustomizedURL + "serious:2";
 			urlOnlyForNonSerious = searchWithThisCustomizedURL + "&count=patient.reaction.reactionmeddrapt.exact";
-			arrayOfAllGetCalls.push({"urlOnlyForNonSerious":urlOnlyForNonSerious});
 		}
 	} 
 	
 	var selectedValues = $("#selectOutcomes").val();
-	var arrayOfUrls = [];
-	var searchWithThisIndivuidualURL = searchWithThisCustomizedURL;
 	
 	var theUnionOfSelectedOutcomes="";
 	if (selectedValues != null) {
@@ -165,29 +140,16 @@ function createRequestURL() {
 				theUnionOfSelectedOutcomes = theUnionOfSelectedOutcomes+selectedValues[i]+":1";
 			}
 			
-			//searchWithThisCustomizedURL = searchWithThisCustomizedURL + selectedValues[i]+":1";
-			arrayOfUrls.push(searchWithThisIndivuidualURL+"+AND+"+selectedValues[i]+":1" +"&count=patient.reaction.reactionmeddrapt.exact");
 			
 			if (i !== (selectedValues.length-1)) {
-				//searchWithThisCustomizedURL = searchWithThisCustomizedURL + "+AND+";
 				theUnionOfSelectedOutcomes = theUnionOfSelectedOutcomes + "+";
 			}
 		}
-		
-		arrayOfAllGetCalls.push({"allOutcomeURL" : arrayOfUrls});
-		
 	}
-	
 	
 	searchWithThisCustomizedURL = searchWithThisCustomizedURL + theUnionOfSelectedOutcomes + "&count=patient.reaction.reactionmeddrapt.exact";
 	
-	
 	makeAjaxCallForThisURL(searchWithThisCustomizedURL);
-	
-	makeIndividualAjaxCallsForThisObject(arrayOfAllGetCalls);
-	
-	//var searchWithThisCustomizedURL = "http://api.fda.gov/drug/event.json?search=medicinalproduct:hcl+AND+serious:1+AND+seriousnesshospitalization:1&count=patient.reaction.reactionmeddrapt.exact"
-	
 	
 }
 
@@ -215,19 +177,6 @@ function ajaxGetCustomResultsFail (jqXHR, status, error) {
 	$(".chart").css("display","none");
 	$(".placeholder").css("display","none");
 	$("#ajaxErrorNoReturnData").fadeIn();
-}
-
-
-function makeIndividualAjaxCallsForThisObject(arrayOfAllGetCalls) {
-	var arrayOfAllGetCalls;
-	
-	
-	
-	
-	
-	
-	
-	
 }
 
 
