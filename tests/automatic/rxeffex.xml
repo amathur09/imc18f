@@ -4,7 +4,7 @@
 	xmlns:rxeffex="http://rxeffex.com/test"	xsi:schemaLocation="http://rxeffex.com/test  http://rxeffex.com/rxeffex-test.xsd">
 
 	<rxeffex:name>Rxeffex Regression Test</rxeffex:name>
-	<rxeffex:runBy>wchuang</rxeffex:runBy>
+	<rxeffex:runBy>imcjenkins15</rxeffex:runBy>
 	<rxeffex:outFileRoot>C:/TestOutput</rxeffex:outFileRoot>
 	<rxeffex:scenarios>
 		<rxeffex:scenario>
