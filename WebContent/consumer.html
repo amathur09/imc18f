@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-		
-		<meta charset=ISO-8859-1">
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta http-equiv="Cache-control" content="max-age=43200, public">
+	<meta charset="ISO-8859-1">
+		<meta name="viewport " content="width=device-width, initial-scale=1 " />
+		<meta http-equiv="Cache-control " content="max-age=43200, public ">
 		<title>Adverse Events</title>
 
 		<!-- LIBRARY STYLESHEETS -->
 		
-		<LINK REL="stylesheet" TYPE="text/css" HREF="css/min/lib/jquery-ui.min.css">
-		<LINK REL="stylesheet" TYPE="text/css" HREF="css/min/lib/bootstrap.min.css">
+		<LINK REL="stylesheet " TYPE="text/css " HREF="css/min/lib/jquery-ui.min.css ">
+		<LINK REL="stylesheet " TYPE="text/css " HREF="css/min/lib/bootstrap.min.css ">
 		
 			<!-- UNMINIFIED REFERENCES -->
-			<!-- <LINK REL="stylesheet" TYPE="text/css" HREF="css/lib/jquery-ui.css">
-			<LINK REL="stylesheet" TYPE="text/css" HREF="css/lib/bootstrap.css"> -->
+			<!-- <LINK REL="stylesheet " TYPE="text/css " HREF="css/lib/jquery-ui.css ">
+			<LINK REL="stylesheet " TYPE="text/css " HREF="css/lib/bootstrap.css "> -->
 		
 		<!-- CUSTOM STYLESHEETS -->
-		<LINK REL="stylesheet" TYPE="text/css" HREF="css/min/consumer.min.css">
+		<LINK REL="stylesheet " TYPE="text/css " HREF="css/min/consumer.min.css ">
 		
 		<!--  !! LOADING ALL THE BLOCKING JS AT THE END OF THE PAGE SO THE RENDERING OF THE PAGE IS NOT DELAYED !! -->
 		
@@ -26,28 +25,28 @@
 <body>
 
 	<!-- NAVIGATION BAR -->
-	<div class="navbar-wrapper">
-			<div class="container">
-				<nav class="navbar navbar-default navbar-static-top">
-					<div class="container">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	<div class="navbar-wrapper ">
+			<div class="container ">
+				<nav class="navbar navbar-default navbar-static-top ">
+					<div class="container ">
+						<div class="navbar-header ">
+							<button type="button " class="navbar-toggle collapsed " data-toggle="collapse " data-target="#navbar " aria-expanded="false " aria-controls="navbar ">
 								
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
+								<span class="sr-only ">Toggle navigation</span>
+								<span class="icon-bar "></span>
+								<span class="icon-bar "></span>
+								<span class="icon-bar "></span>
+								<span class="icon-bar "></span>
 								
 							</button>
-							<a class="navbar-brand" href="index.html"><img src="img/18flogo.png" alt="RxEffexS" width="100" height="130"></a>
+							<a class="navbar-brand " href="index.html "><img src="img/18flogo.png " alt="RxEffexS " width="100 " height="130 "></a>
 						</div>
-						<div id="navbar" class="navbar-collapse collapse">
-							<ul class="nav navbar-nav navbar-right">
-								<li><a href="index.html">Home</a></li>
-								<li class="active"><a href="consumer.html">Consumers</a></li>
-								<li><a href="maintainence.html">Medical Professionals</a></li>
-								<li><a href="maintainence.html">Researchers</a></li>
+						<div id="navbar " class="navbar-collapse collapse ">
+							<ul class="nav navbar-nav navbar-right ">
+								<li><a href="index.html ">Home</a></li>
+								<li class="active "><a href="consumer.html ">Consumers</a></li>
+								<li><a href="maintainence.html ">Medical Professionals</a></li>
+								<li><a href="maintainence.html ">Researchers</a></li>
 							</ul>
 						</div>
 					</div>
@@ -57,103 +56,103 @@
 	<!-- NAVIGATION BAR END -->	
 	
 	<!-- WEB PAGE CONTENT -->	
-		<div class="container content">
+		<div class="container content ">
 			
-			<div class="row">
-				<div class="col-md-2"></div>
-					<div class="col-md-8">
-						<div class="consumerHeader">
+			<div class="row ">
+				<div class="col-md-2 "></div>
+					<div class="col-md-8 ">
+						<div class="consumerHeader ">
 						<h2>Consumers</h2>
-						<p>This application allows you to search the FDA Adverse Event Reporting System to return adverse event counts. Select the Drug Name, the seriousness of the event, the possible seriousness outcome that you want displayed.  Click on "Generate Chart" and the (FAERS) visualization will appear.</p>				
+						<p>This application allows you to search the FDA Adverse Event Reporting System to return adverse event counts. Select the Drug Name, the seriousness of the event, the possible seriousness outcome that you want displayed.  Click on "Generate Chart " and the (FAERS) visualization will appear.</p>				
 						</div>
 					</div>
-				<div class="col-md-2"></div>
+				<div class="col-md-2 "></div>
 			</div>
 			
-			<hr class="featurette-divider-thin">
+			<hr class="featurette-divider-thin ">
 			
-			<div class="row">
-				<div class="col-md-4">
+			<div class="row ">
+				<div class="col-md-4 ">
 				<div class="row ">
-						<div class="col-md-11 well filterWell">
+						<div class="col-md-11 well filterWell ">
 		  					<legend>Search: Drug Name</legend>
-		  					<input id="inputSearchCriteria" type="text" class="form-control margin-bottom-20" placeholder="eg. aspirin">
+		  					<input id="inputSearchCriteria " type="text " class="form-control margin-bottom-20 " placeholder="eg. aspirin ">
 		  					
 		  					<legend>Filter By:</legend>
 		  					<label>Significance of the event</label>
 								<div>
-									<button type="button" class="btn btn-default" id="seriousSignificant">Serious</button>
-									<button type="button" class="btn btn-default" id="nonSeriousSignificant">Non-Serious</button>
+									<button type="button " class="btn btn-default " id="seriousSignificant ">Serious</button>
+									<button type="button " class="btn btn-default " id="nonSeriousSignificant ">Non-Serious</button>
 								</div>
 							
-							<hr class="featurette-divider-thin">
-							<div class="divOutcomesPlaceholder">
-									<div id="divOutcomes">
+							<hr class="featurette-divider-thin ">
+							<div class="divOutcomesPlaceholder ">
+									<div id="divOutcomes ">
 										<label>Outcomes</label>
-										<select id="selectOutcomes" class="list-group" multiple>
-											<option value="seriousnessdeath">Results in death</option>
-										    <option value="seriousnesslifethreatening">Life-threatening</option>
-										    <option value="seriousnesshospitalization">Caused/prolonged hospitalization</option>
-										    <option value="seriousnessdisabling">Disabling/Incapacitating</option>
-										    <option value="seriousnesscongenitalanomali">Congenital anomaly/birth defect</option>
-										    <option value="seriousnessother">Other medically important condition</option>
+										<select id="selectOutcomes " class="list-group " multiple>
+											<option value="seriousnessdeath ">Results in death</option>
+										    <option value="seriousnesslifethreatening ">Life-threatening</option>
+										    <option value="seriousnesshospitalization ">Caused/prolonged hospitalization</option>
+										    <option value="seriousnessdisabling ">Disabling/Incapacitating</option>
+										    <option value="seriousnesscongenitalanomali ">Congenital anomaly/birth defect</option>
+										    <option value="seriousnessother ">Other medically important condition</option>
 										</select>
 									</div>
 								</div>
 								
 								<div>
-									<button type="button" class="btn btn-info wide" id="generateChartButton" >Generate Chart</button>
+									<button type="button " class="btn btn-info wide " id="generateChartButton " >Generate Chart</button>
 								</div>
 								<div>
-									<button type="button" class="btn btn-success wide btn-xs" id="resetButton">Reset All Fields</button>
+									<button type="button " class="btn btn-success wide btn-xs " id="resetButton ">Reset All Fields</button>
 								</div>
 						</div>
 						
-					<div class="col-md-1"></div>
+					<div class="col-md-1 "></div>
 				</div>
 				</div>
 				
-				<div class="col-md-8">
+				<div class="col-md-8 ">
 						
-						<div id="searchBreadCrumbs" class="row">
-							<legend>Search results for</legend><ul class="breadcrumb"></ul>
+						<div id="searchBreadCrumbs " class="row ">
+							<legend>Search results for</legend><ul class="breadcrumb "></ul>
 						</div>
-						<div class="row">
+						<div class="row ">
 						<legend>Adverse Events</legend>
-						<div class="col-md-12 well chartWell">
-							<h4 class="placeholder form_section">Your chart will appear here after you hit the "Generate Chart" button with your required criteria. </h4>
-							<div class="alert alert-dismissable alert-danger" id="ajaxErrorNoReturnData">
+						<div class="col-md-12 well chartWell ">
+							<h4 class="placeholder form_section ">Your chart will appear here after you hit the "Generate Chart " button with your required criteria. </h4>
+							<div class="alert alert-dismissable alert-danger " id="ajaxErrorNoReturnData ">
 				              <strong>Oh snap!</strong> Your search criteria did not give a result. Please change some parameters and try again.
 				            </div>
-							<svg class="chart"></svg>
-							<hr class="featurette-divider-thin">
-							<div class="alert alert-dismissable alert-info" id="exitLinktoFares">
-				            	Click <a target="_blank" href = "http://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/"> here </a>to learn about the FAERS data that feeds this graphic. 
+							<svg class="chart "></svg>
+							<hr class="featurette-divider-thin ">
+							<div class="alert alert-dismissable alert-info " id="exitLinktoFares ">
+				            	Click <a target="_blank " href = "http://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/ "> here </a>to learn about the FAERS data that feeds this graphic. 
 				            </div>
 						</div>
 				</div>
-				<!-- <div class="col-md-1"></div> -->
+				<!-- <div class="col-md-1 "></div> -->
 				
 			</div>
 		</div>
 		</div>
 		
-			<footer class="bottomFooter">
-      			<div class="container form_section text-muted">
+			<footer class="bottomFooter ">
+      			<div class="container form_section text-muted ">
       				<h5><strong>Information Management Consultants, Inc</strong></h5>
-      				<h6>703-871-8700 | <a href="http://www.IMC.com">www.IMC.com</a> | marketing@imc.com | <a target="_blank" href="https://docs.google.com/forms/d/1yNWgQ7AzoKz5Wpqm3PEBblvh2drmovfK0C_OZ9fzrZY/viewform?usp=send_form">Provide Feedback</a></h6>
-      				<h6>Additional Information: <a href="http://clinicaltrials.gov">http://clinicaltrials.gov</a></h6>
-        			<span id="siteseal"><script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=YDtW5XakcdKG3AaczDFaj7AL7Jk1zz5T5czqzLeWrjsnwTpFAYTKdZY87Xxt"></script></span> <h6>&copy2015 by IMC</h6>
+      				<h6>703-871-8700 | <a href="http://www.IMC.com ">www.IMC.com</a> | marketing@imc.com | <a target="_blank " href="https://docs.google.com/forms/d/1yNWgQ7AzoKz5Wpqm3PEBblvh2drmovfK0C_OZ9fzrZY/viewform?usp=send_form ">Provide Feedback</a></h6>
+      				<h6>Additional Information: <a target="_blank " href="https://clinicaltrials.gov ">https://clinicaltrials.gov</a></h6>
+        			<span id="siteseal "><script type="text/javascript " src="https://seal.godaddy.com/getSeal?sealID=YDtW5XakcdKG3AaczDFaj7AL7Jk1zz5T5czqzLeWrjsnwTpFAYTKdZY87Xxt "></script></span> <h6>&copy2015 by IMC</h6>
         			
       			</div>
    			</footer>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="js/min/lib/bootstrap.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
-		<script src="js/min/lib/listgroup.min.js"></script>
-		<!-- <script src="js/min/consumer.min.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js "></script>
+		<script src="js/min/lib/bootstrap.min.js "></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js "></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js " charset="utf-8 "></script>
+		<script src="js/min/lib/listgroup.min.js "></script>
+		<script src="js/min/consumer.min.js "></script>
 		<!-- UN-MINIFIED REFERENCE -->
-			<script src="js/consumer.js"></script>
+			<!-- <script src="js/consumer.js "></script> -->
 </body>
 </html>
