@@ -1,0 +1,19 @@
+commit 009e16c8b41a3641460ed38143e267d064f950cd
+tree 00ab2460f3e5c942ebd1646f92b571d902a6d3ae
+parent 94b4fd8b3b0a94d64688ebb1ca43acdd8d743277
+author shreyas <shreyaspatil@imc.com> 1435609066 -0400
+committer shreyas <shreyaspatil@imc.com> 1435609066 -0400
+
+    EIGHTEENF27: EIGHTEENF28: Added the link for FARES website as required.
+    included a reference to Bootstrap.js on all pages that made the web page
+    accessible from mobile devices.
+
+:100644 100644 e2fbff0ac853ed17be524f47418dc623b74743a9 792eeb456fd5a6bfebc42499cf3aecae8ee8fd49 M	WebContent/consumer.html
+:100644 100644 d6fa7efb1fb0bf2b7799018a3894c7855e4183a7 c3853583362d81742c692e98e11292581d2ad156 M	WebContent/css/consumer.css
+:100644 100644 0d152b4b7e289f60c34ca4716021574538b04a54 ac8a685655e5dc995ff556f69079d912fecd8b35 M	WebContent/css/lib/bootstrap.css
+:100644 100644 94c1f6e31437363e7b5eb103f6bccdace126e1d7 65986d3556eff15a47f37e41a36d35aba2e47562 M	WebContent/css/min/consumer.min.css
+:100644 100644 a3a892cf70f7523a5982979244913467cf84f78c 492c050c35e51108e884b28283eb7446e0bb1602 M	WebContent/css/min/lib/bootstrap.min.css
+:100644 100644 fad99df714193aea55ad47ef412fd230263e5c47 cb5b7606538095f03f9933e214bffb34ec74c3a4 M	WebContent/index.html
+:100644 100644 cd46307fd8cc6c8175fb98950280ea969722345e f88375acfaeb1cafb3c51c4be2c474db50809026 M	WebContent/js/consumer.js
+:100644 100644 d84cc879805715092ca86803c15cbd29c1ada7a0 70a04f680e6d6e083407e126ebdce85286ca9522 M	WebContent/js/min/consumer.min.js
+:100644 100644 4fbe0901d6cec6756b7c4aa2278773f1686f597d 31b81c9422930b4258b7146c8f805e04c99e5670 M	WebContent/maintainence.html

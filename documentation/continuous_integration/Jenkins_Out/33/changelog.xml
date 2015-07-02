@@ -1,0 +1,21 @@
+commit 49fb23e5404af5f6aefea7332a0935c23ce12d55
+tree bb17b7a926f92defce176bdfa52eab515c6798fe
+parent 17dc80fc9008fa770e2d45bbd4831473c0ab0f93
+author mkillmeyer <mkillmeyer@imc.com> 1435697966 -0400
+committer mkillmeyer <mkillmeyer@imc.com> 1435697966 -0400
+
+    EIGHTEENF-5 : Added new directory for iterative approach.
+
+:000000 100644 0000000000000000000000000000000000000000 bcae6bb717b0cd14f8431da75b72e8148025dc62 A	documentation/scrum_process/Iterative_Appoach/Docs_Go Here.txt
+
+commit 358fa3d7d9f441de30e91e9b4e9f125f12af98cf
+tree 26e38ad057f9c87c5486d0b178aa795e833d115f
+parent 185092c274490ebeec6df09f5556da6b27e55483
+author amritanayak <anayak@imc.com> 1435697736 -0400
+committer amritanayak <anayak@imc.com> 1435697736 -0400
+
+    EIGHTEENF-5 Added AWS screenshots
+    
+    EIGHTEENF-5 Added AWS Basic Monitoring screenshots
+
+:000000 100644 0000000000000000000000000000000000000000 64eb6cf9fda5ddde3b7461789de3831ec1c32449 A	documentation/continuous_integration/AWS Basic Monitoring.docx

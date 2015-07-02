@@ -1,0 +1,13 @@
+commit b14b73a2fc9263050d6661bcfcd533c8a6cf1da3
+tree 877dcb922b00fcf09233543482a25d22cb6ffc18
+parent 541ecf47763421cd9a805f3767702abf034fffcd
+author dbhanose <dbhanose@imc.com> 1435764835 -0400
+committer dbhanose <dbhanose@imc.com> 1435764835 -0400
+
+    EIGHTEENF-29: Added New information in Step 7.
+    
+    EIGHTEENF-29: Modified Unit Test Case. Added description to show that
+    FDA link opens in new tab.
+
+:100644 100644 a7ebccc4f158194cbd36ceb69f4bebc2942adcb2 32e914ff5b28fd9643385724df0a5186c6106e5c M	tests/unit/Unit_Test_Case_08.docx
+:000000 100644 0000000000000000000000000000000000000000 1d63cdd517974d69e8faa59e8388a23d3d293024 A	tests/unit/~$it_Test_Case_08.docx

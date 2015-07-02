@@ -1,0 +1,13 @@
+commit 8cc64400307beec0e4e2ba244f30f43bb2edfec0
+tree b0c747ee43d148e1924bbfb345ba156359301f98
+parent 778d8de536e208aeaf56796849e444f12c6c0eab
+author mkillmeyer <mkillmeyer@imc.com> 1435682604 -0400
+committer mkillmeyer <mkillmeyer@imc.com> 1435682604 -0400
+
+    EIGHTEENF-5 : Added the SSL Cert configuration information and GoDaddy certs.
+
+:000000 100644 0000000000000000000000000000000000000000 b4adc0b55e57d2f27f833d4851b59714ae74dca3 A	documentation/continuous_integration/SSL/7b1f9e33efd61879.crt
+:000000 100644 0000000000000000000000000000000000000000 a7c381b1ebcf48c300d772ebf745fa24d884a436 A	documentation/continuous_integration/SSL/gd_bundle-g2-g1.crt
+:000000 100644 0000000000000000000000000000000000000000 ead19e3c1458d8685711c2e87c726ac8f0578477 A	documentation/continuous_integration/SSL/gdig2.crt
+:000000 100644 0000000000000000000000000000000000000000 fb83284dd7ab24d94585f432395a56d28fe52395 A	documentation/continuous_integration/SSL/keytool_commands.txt
+:000000 100644 0000000000000000000000000000000000000000 ab5fd792cb37da67c68a02d8ced81de0be9f3ee0 A	documentation/continuous_integration/SSL/server.xml

@@ -1,0 +1,37 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace C:\.jenkins\jobs\FDA-Demo\workspace
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/amathur09/imc18f.git # timeout=10
+Fetching upstream changes from https://github.com/amathur09/imc18f.git
+ > git.exe --version # timeout=10
+ > git.exe -c core.askpass=true fetch --tags --progress https://github.com/amathur09/imc18f.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision a459d84baa60521be137b87c42443a5301af7773 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f a459d84baa60521be137b87c42443a5301af7773
+FATAL: Could not checkout null with start point a459d84baa60521be137b87c42443a5301af7773
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mhudson.plugins.git.GitException: Could not checkout null with start point a459d84baa60521be137b87c42443a5301af7773
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$8.execute(CliGitAPIImpl.java:1855)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1033)
+	at hudson.scm.SCM.checkout(SCM.java:485)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1282)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:610)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:86)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:532)
+	at hudson.model.Run.execute(Run.java:1744)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:98)
+	at hudson.model.Executor.run(Executor.java:374)
+Caused by: hudson.plugins.git.GitException: Command "git.exe checkout -f a459d84baa60521be137b87c42443a5301af7773" returned status code 1:
+stdout: 
+stderr: error: unable to create file documentation/scrum_process/JIRA_Contents/Sprint_1/Test Issues/[GSATEST-4] As a Consumer, I want to display a graph based on filters I selected, so I can learn more about the Seriousness_EIGHTEENF-13 - IMC USAC JIRA Portal.pdf (Filename too long)
+Previous HEAD position was 3ccd0be... Merge pull request #12 from spatil89/master
+HEAD is now at a459d84... Merge pull request #33 from mkillmeyer/master
+
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:1591)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.access$500(CliGitAPIImpl.java:86)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$8.execute(CliGitAPIImpl.java:1850)
+	... 10 more
+Finished: FAILURE

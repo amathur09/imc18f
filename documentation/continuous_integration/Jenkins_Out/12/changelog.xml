@@ -1,0 +1,29 @@
+commit d0d42315e50a5a999e9a609b8b52c387dfa54714
+tree 54fc336cb17067b8c453b98b71c3a629db1cd3f5
+parent f9d0a164b0b03f6a2a09d803377fdbe04a77e8c8
+author Amrita Nayak <anayak@imc.com> 1435605495 -0400
+committer Amrita Nayak <anayak@imc.com> 1435605495 -0400
+
+    Delete [GSATEST-4] As a Consumer, I want to display a graph based on filters I selected, so I can learn.pdf
+
+:100644 000000 1f4f54125d651b5b222a9a6daaa38f63c8eb2f63 0000000000000000000000000000000000000000 D	documentation/scrum_process/JIRA_Contents/Sprint_1/Tests_Short_Name/[GSATEST-4] As a Consumer, I want to display a graph based on filters I selected, so I can learn.pdf
+
+commit f9d0a164b0b03f6a2a09d803377fdbe04a77e8c8
+tree bcb59bc13a630115b7ba78fd0cf8f98f7d1b8fe1
+parent 05c09913d372cdf81459f6f6342daa8095fcb5e5
+author Amrita Nayak <anayak@imc.com> 1435605473 -0400
+committer Amrita Nayak <anayak@imc.com> 1435605473 -0400
+
+    Delete [EIGHTEENF-20] As a physician, I am interested in the drug dosage that the patient was taking at the time.pdf
+
+:100644 000000 a3ddd861393986405b74085305b41d6df4395ca1 0000000000000000000000000000000000000000 D	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues_Short_Name/[EIGHTEENF-20] As a physician, I am interested in the drug dosage that the patient was taking at the time.pdf
+
+commit 05c09913d372cdf81459f6f6342daa8095fcb5e5
+tree f2daa616889363c15bf5e7bef01f697288a04481
+parent e1c01fd293551e15e0969f306b51792688157e51
+author Amrita Nayak <anayak@imc.com> 1435605329 -0400
+committer Amrita Nayak <anayak@imc.com> 1435605329 -0400
+
+    Delete [EIGHTEENF-16] As a Consumer, I want review adverse events based on condition.pdf
+
+:100644 000000 0c103ea206d31c09a47b68d1f8e0d27a7f6e916c 0000000000000000000000000000000000000000 D	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues_Short_Name/[EIGHTEENF-16] As a Consumer, I want review adverse events based on condition.pdf
