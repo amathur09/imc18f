@@ -1,0 +1,23 @@
+commit 5c1fabdabc5dc489ed3df833a7df7c84f2b3e0d4
+tree 7f5d9fc7a4c3097fed96e82a2ba517adb53daa4b
+parent 1e0c11436577b893794e46e8379d8178e03dc8fc
+author amritanayak <anayak@imc.com> 1435688577 -0400
+committer amritanayak <anayak@imc.com> 1435688577 -0400
+
+    EIGHTEENF-5 : Updated Daily Progress Document
+    
+    EIGHTEENF-5 : Updated Daily Progress Document with day-to-day activities
+
+:100644 100644 08250fdf9536f2fa346b7e7c271a8a6e49773ee2 bec8f7192df7da65bf355a4b814d0a8212fcedc4 M	documentation/Daily Progress.docx
+
+commit 7180e8cb5e597ea04644e14cc4895a4d689c8655
+tree 9f823b419ab404f55602aa2cfab35b4f47804942
+parent 60c1fd0c801c679dca8bc3924eccdb6d26aaec06
+author amritanayak <anayak@imc.com> 1435680920 -0400
+committer amritanayak <anayak@imc.com> 1435680920 -0400
+
+    test
+    
+    test
+
+:000000 100644 0000000000000000000000000000000000000000 30d74d258442c7c65512eafab474568dd706c430 A	documentation/test.txt

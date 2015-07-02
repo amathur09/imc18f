@@ -1,0 +1,56 @@
+Rxeffex Regression Test
+
+Scenario:	Rxeffex Home Page
+
+===================
+Test Case:			Home Page
+Test URL:			https://rxeffex.com
+Passed:			false
+Start Time:		07/01/2015 08:09:03.637
+End Time:			07/01/2015 08:09:04.292
+Time Limit:		0 (ms)
+Duration:			655 (ms)
+Inputs
+Expected Values
+	Field:	//*[@id="navbar"]/ul/li[1]/a		Expected Value:	Home		Notes:	Could not locate the field.
+	Field:	//*[@id="navbar"]/ul/li[2]/a		Expected Value:	Consumers		Notes:	Could not locate the field.
+	Field:	//*[@id="rxEffexIndexpageCaousel"]/div/div/div/div/h1		Expected Value:	Committed to transparency for adverse events		Notes:	Could not locate the field.
+Message:			
+Screenshot:		screenshot-Home-Page.png
+===================
+
+===================
+Test Case:			Transition to Consumers Page
+Test URL:			https://rxeffex.com
+Passed:			false
+Start Time:		07/01/2015 08:09:04.292
+End Time:			07/01/2015 08:09:04.760
+Time Limit:		0 (ms)
+Duration:			468 (ms)
+Inputs
+	Field:	//*[@id="navbar"]/ul/li[2]/a		Value:			Notes:	Could not locate the field.
+Expected Values
+	Field:	/html/body/div[2]/div[1]/div[2]/div/h2		Expected Value:	Consumers		Notes:	Could not locate the field.
+Message:			
+Screenshot:		screenshot-Transition-to-Consumers-Page.png
+===================
+
+===================
+Test Case:			Adverse Event Query
+Test URL:			https://rxeffex.com/consumer.html
+Passed:			false
+Start Time:		07/01/2015 08:09:04.760
+End Time:			07/01/2015 08:09:05.509
+Time Limit:		0 (ms)
+Duration:			749 (ms)
+Inputs
+	Field:	//*[@id="inputSearchCriteria"]		Value:	aspirin		Notes:	Could not locate the field.
+	Field:	//*[@id="seriousSignificant"]		Value:			Notes:	Could not locate the field.
+	Field:	//*[@id="divOutcomes"]/ul/a[4]		Value:			Notes:	Could not locate the field.
+	Field:	//*[@id="generateChartButton"]		Value:			Notes:	Could not locate the field.
+Expected Values
+	Field:	/html/body/div[2]/div[2]/div[2]/div[2]/div/*[name()='svg']/*[name()='g']/*[name()='text']		Expected Value:	702		Notes:	Could not locate the field.
+Message:			
+Screenshot:		screenshot-Adverse-Event-Query.png
+===================
+
