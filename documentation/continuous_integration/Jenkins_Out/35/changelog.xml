@@ -1,0 +1,26 @@
+commit 01d9494d127bc478acf00f8eb64007dc4084dccd
+tree 31d72364dba6809f480a9c9ce53ecc0d611ff62d
+parent 8900cfed3cccb47ff36cc10aa96d4e838fa6732a
+author amritanayak <anayak@imc.com> 1435701051 -0400
+committer amritanayak <anayak@imc.com> 1435701051 -0400
+
+    EIGHTEENF-5 : Added Photos
+    
+    EIGHTEENF-5 : Added Photos of the team
+
+:000000 100644 0000000000000000000000000000000000000000 9f9c82f2b9f06471c3d68efd28ef91b098671b2a A	documentation/scrum_process/Photos/Daily Stand Up/Standup 1.jpg
+:000000 100644 0000000000000000000000000000000000000000 bbc425d2cb98fc0d27d58916e611cdbfc77fd068 A	documentation/scrum_process/Photos/Daily Stand Up/Standup 2.jpg
+:000000 100644 0000000000000000000000000000000000000000 4c5d2efec63b506746306ae27790398c6c9c42e9 A	documentation/scrum_process/Photos/Dev Team/Alan Shreyas Sachin .jpg
+:000000 100644 0000000000000000000000000000000000000000 cef4ad19ae6ff1d6a0d54abbcfd1e8d0481d7ec4 A	documentation/scrum_process/Photos/Dev Team/Amrita Atul.jpg
+:000000 100644 0000000000000000000000000000000000000000 9f3fc34ce38db35b8f3b9d0ca042b43dfe082959 A	documentation/scrum_process/Photos/Dev Team/Amrita.jpg
+:000000 100644 0000000000000000000000000000000000000000 014a4d45851446e6f39290d6b6cf834a09403ecf A	documentation/scrum_process/Photos/Dev Team/Dipti Shreyas Sachin Parul.jpg
+:000000 100644 0000000000000000000000000000000000000000 39e188b3d8b1473a442d390282733c66588344fb A	documentation/scrum_process/Photos/Dev Team/Matt+Amrita.jpg
+:000000 100644 0000000000000000000000000000000000000000 4a4234150bd43e430f7e596598648943cb7d3c6d A	documentation/scrum_process/Photos/Dev Team/Parul Joseph Sachin Dipti Tom.jpg
+:000000 100644 0000000000000000000000000000000000000000 c58cf9fe3501e46783f5ca0eb946d6d58b3bc0c9 A	documentation/scrum_process/Photos/Dev Team/Sachin.jpg
+:000000 100644 0000000000000000000000000000000000000000 37031ae1b82f78b20a7f63ff485bc43818024fae A	documentation/scrum_process/Photos/Dev Team/Shreyas Dipti Sachin.jpg
+:000000 100644 0000000000000000000000000000000000000000 d9aef94c2811286c8ccabb453bd91813c274b306 A	documentation/scrum_process/Photos/Dev Team/Shreyas+Parul.jpg
+:000000 100644 0000000000000000000000000000000000000000 a83768c77f33c16efc095763df37c32c78ab1456 A	documentation/scrum_process/Photos/Dev Team/Shreyas.jpg
+:000000 100644 0000000000000000000000000000000000000000 087b4206ff40ecc4b0f688c8ee6f7c7f5def810d A	documentation/scrum_process/Photos/Pair Programming/Alan+Shreyas.jpg
+:000000 100644 0000000000000000000000000000000000000000 050cf584ff53b5077e8748cad52b37c28cff9e29 A	documentation/scrum_process/Photos/Pair Programming/Shreyas Alan Enoch.jpg
+:000000 100644 0000000000000000000000000000000000000000 bc4d0919fdf6103626a20a00be9444a3c4338ecd A	documentation/scrum_process/Photos/Sprint Review/Alan Shreyas Sachin Parul Tom.jpg
+:000000 100644 0000000000000000000000000000000000000000 b967d1bae9d8db6ee2e03d26db09a98cb7de1914 A	documentation/scrum_process/Photos/Sprint Review/Sprint 1 Review.jpg

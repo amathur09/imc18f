@@ -1,0 +1,9 @@
+commit 2125a2136bc038d5b60cfea192c4d93dbd6975ae
+tree dcc6717e46e508db0fa94e77a9d828a05036aee5
+parent 0578e63c88b2ebe2caa042380d1b7d7448dd97ef
+author mkillmeyer <mkillmeyer@imc.com> 1435690939 -0400
+committer mkillmeyer <mkillmeyer@imc.com> 1435690939 -0400
+
+    EIGHTEENF-5 : Added the JIRA Portal access instructions.
+
+:000000 100644 0000000000000000000000000000000000000000 fc24f9b978efcce1e43a85ddc984f0460b52d1b0 A	documentation/scrum_process/JIRA_Contents/How to Access IMCs JIRA Portal.txt

@@ -1,0 +1,9 @@
+commit 8864d27d2ce9a7a7418a2aaca57842aafb1d69ba
+tree 8a34b112b852b94a9012b541b28f6f9ef76f4a6a
+parent 009e16c8b41a3641460ed38143e267d064f950cd
+author shreyas <shreyaspatil@imc.com> 1435610843 -0400
+committer shreyas <shreyaspatil@imc.com> 1435610843 -0400
+
+    EIGHTEENF-10 : Fixing a typo, adding an end div tag.
+
+:100644 100644 792eeb456fd5a6bfebc42499cf3aecae8ee8fd49 f4d140870fd213e32036b2f6af664b91f407a284 M	WebContent/consumer.html

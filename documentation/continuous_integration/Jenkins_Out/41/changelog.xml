@@ -1,0 +1,12 @@
+commit bf0918e4f619b94cc160a8dd678b1b5b9891790e
+tree 3ba280ba8947ddd41138a79f0ac019534265b5f0
+parent ae39862d18e86c6b6a0d9526adfde5e81c375d13
+author shreyas <shreyaspatil@imc.com> 1435766521 -0400
+committer shreyas <shreyaspatil@imc.com> 1435766521 -0400
+
+    EIGHTEENF-32 :  Fixed the defect that took the user to the wrong
+    website. It now takes you to the correct website.
+
+:100644 100644 4d02e60d952cf04cc4096711a8948bc1786044b4 f8f2ac4a6bca3cf59b4057d8fbc9ff22bf437fb7 M	WebContent/consumer.html
+:100644 100644 e242e308407ec3968abb679e1ce8ef89ff8aa67c 83ec4e040b8d790f300817602c9df56d6da9fa27 M	WebContent/index.html
+:100644 100644 0c1b3f898d51a56391f2b271426211a8f5f73382 f0e320de1ad779cdb203bd05c9a58e11d0116ebd M	WebContent/maintainence.html

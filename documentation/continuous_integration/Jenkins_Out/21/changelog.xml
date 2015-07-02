@@ -1,0 +1,9 @@
+commit f44b7505ea1af917e7bff129f31b654d327f1971
+tree a816f2f744a52ebdc2570043454021253302c29a
+parent ad12cdb7496cf2bd856e3b708ada30207882c06c
+author WChuang <WChuang@imc.com> 1435678347 -0400
+committer WChuang <WChuang@imc.com> 1435678347 -0400
+
+    Change directory to the test dir
+
+:100644 100644 7adb5a2d5e4d8ee16ad325d36be202357813baf5 ca7b1c12bcb63f2f1c4eebaa3d093783e5aaf897 M	tests/automatic/runtest.bat

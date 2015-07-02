@@ -1,0 +1,12 @@
+commit ca7233732a683ebe4a74de06df3419e3ba9bd54c
+tree 85137fc4c2807a9021e33a52d73b8da861a2cc43
+parent e272461d978af040b34e8149c14232f70fd96f89
+author shreyas <shreyaspatil@imc.com> 1435603840 -0400
+committer shreyas <shreyaspatil@imc.com> 1435603840 -0400
+
+    EIGHTEENF-12: calculating the width of the bar graph based on the width
+    of it s container so it stays in the container.
+
+:100644 100644 07fc518f4c7caa6331bb05262f30f37c472d33ec e2fbff0ac853ed17be524f47418dc623b74743a9 M	WebContent/consumer.html
+:100644 100644 248187371e3f76866e8ed4138d8d7c9cbd970df6 fad99df714193aea55ad47ef412fd230263e5c47 M	WebContent/index.html
+:100644 100644 f2aaafcac682192ba49886293627d419a2759d42 d84cc879805715092ca86803c15cbd29c1ada7a0 M	WebContent/js/min/consumer.min.js
