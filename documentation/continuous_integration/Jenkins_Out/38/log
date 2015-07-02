@@ -1,0 +1,207 @@
+Started by user [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAw+oBn6pcWpRfqZuclZqXnZmXnFhqYApQexDccAAAA=[0mIMC Jenkins CI
+Building in workspace C:\.jenkins\jobs\rxeffex\workspace
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/amathur09/imc18f.git # timeout=10
+Fetching upstream changes from https://github.com/amathur09/imc18f.git
+ > git.exe --version # timeout=10
+ > git.exe -c core.askpass=true fetch --tags --progress https://github.com/amathur09/imc18f.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 7906323bf5f0f7fe90f4d59b6cda56e286f1fbd7 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 7906323bf5f0f7fe90f4d59b6cda56e286f1fbd7
+ > git.exe rev-list 7906323bf5f0f7fe90f4d59b6cda56e286f1fbd7 # timeout=10
+[workspace] $ cmd /c call C:\apache-tomcat-8.0.23\temp\hudson5333079911447730007.bat
+
+C:\.jenkins\jobs\rxeffex\workspace>c:\fdademo\buildw.bat C:\.jenkins\jobs\rxeffex\workspace 
+
+C:\.jenkins\jobs\rxeffex\workspace>REM Pull Code from GitHub, build, and deploy to Tomcat 
+
+C:\.jenkins\jobs\rxeffex\workspace>cd C:\.jenkins\jobs\rxeffex\workspace\workspace\WebContent 
+The system cannot find the path specified.
+
+C:\.jenkins\jobs\rxeffex\workspace>rmdir /S /Q C:\apache-tomcat-8.0.23\webapps\ROOT 
+
+C:\.jenkins\jobs\rxeffex\workspace>mkdir C:\apache-tomcat-8.0.23\webapps\ROOT 
+
+C:\.jenkins\jobs\rxeffex\workspace>xcopy /s /e * C:\apache-tomcat-8.0.23\webapps\ROOT 
+C:README.md
+C:documentation\Daily Progress.docx
+C:documentation\test.txt
+C:documentation\continuous_integration\AWS Basic Monitoring.docx
+C:documentation\continuous_integration\Docs_Go Here.txt
+C:documentation\continuous_integration\SSL\7b1f9e33efd61879.crt
+C:documentation\continuous_integration\SSL\Domain Access Approval Request Sent.msg
+C:documentation\continuous_integration\SSL\Domain Control Verification Is Required.msg
+C:documentation\continuous_integration\SSL\gdig2.crt
+C:documentation\continuous_integration\SSL\gd_bundle-g2-g1.crt
+C:documentation\continuous_integration\SSL\hX3nU5lp.html
+C:documentation\continuous_integration\SSL\keytool_commands.txt
+C:documentation\continuous_integration\SSL\server.xml
+C:documentation\design\18F Prototype Styleguide.pdf
+C:documentation\design\18flogo.gif
+C:documentation\design\18flogo.png
+C:documentation\design\18fsecondpage.jpg
+C:documentation\design\18fvisualrep.png
+C:documentation\design\Design_Docs_Go Here.txt
+C:documentation\design\favicon 5.ico
+C:documentation\license\Apache (Tomcat, Maven, Selenium).txt
+C:documentation\license\Bootstrap.txt
+C:documentation\license\BootSwatchr.txt
+C:documentation\license\D3JS.txt
+C:documentation\license\Docs_Go Here.txt
+C:documentation\license\Eclipse.txt
+C:documentation\license\Git.txt
+C:documentation\license\Jenkins CI.txt
+C:documentation\license\JQuery-UI.txt
+C:documentation\license\OopenSSL toolkit.txt
+C:documentation\scrum_process\GSA Agile Delivery Services RFQ IMC Response Team.docx
+C:documentation\scrum_process\IMC 18F Prototype Approach.docx
+C:documentation\scrum_process\Iterative Approach\Docs_Go Here.txt
+C:documentation\scrum_process\JIRA_Contents\How to Access IMCs JIRA Portal.txt
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-10] As a Consumer, I want to go to a website for information on adverse events from drugs.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-11] As a Consumer, I want to search for the most frequent events for a drug.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-12] As a Consumer, I want to be able to see the most frequent adverse events for a drug in a graph.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-13] As a Consumer, I want to display a graph based on filters I selected.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-14] As a Consumer, I want link to a detailed labeling information page.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-15] As a Consumer, I want search adverse events by drug class.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-17] As a Consumer, I want to generate a pdf based search results, so I can have easy access.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-18] As a researcher, I want to extract adverse event data, so I can perform ad-hoc analysis.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-19] As researcher, I am most interested in adverse event description and FDA enforcement action.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-1] Initiate 18F Prototype Project and Stand up Team - IMC Public Sector JIRA Portal.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-21] As a physician, I am interested in the patient demographic for an event.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-22] As a consumer, I am interested in social media news on a particular treatment.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-23] Conduct usability testing on multiple devices - IMC Public Sector JIRA Portal.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-24] Chart not refreshing after the second time - IMC Public Sector JIRA Portal.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-25] Error message is not correct.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-2] Develop the Design for the Prototype - IMC Public Sector JIRA Portal.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-3] Facilitate the 18F Prototype Project - IMC Public Sector JIRA Portal.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-4] Formulate and Implement Infrastructure for Project - IMC Public Sector JIRA Portal.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-5] Activity Tracking and Documentation Support - IMC Public Sector JIRA Portal.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-6] Develop the User Stories for the Prototype - IMC Public Sector JIRA Portal.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-7] Refine the Understanding _ Requirements of the User Community.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-8] Conduct the FAERS Data Review - IMC Public Sector JIRA Portal.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Issues_Short_Name\[EIGHTEENF-9] Develop the IMC Playbook - IMC Public Sector JIRA Portal.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Reports_Short_Name\Burndown Chart - GSA 18F Prototype - Agile Board - IMC Public Sector JIRA Portal.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Reports_Short_Name\Cumulative Flow Diagram - GSA 18F Prototype - Agile Board - IMC Public Sector JIRA Portal.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Reports_Short_Name\Release Burndown - GSA 18F Prototype - Agile Board - IMC Public Sector JIRA Portal.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Reports_Short_Name\Sprint Report - GSA 18F Prototype - Agile Board - IMC Public Sector JIRA Portal.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Reports_Short_Name\Version Report - GSA 18F Prototype - Agile Board - IMC Public Sector JIRA Portal.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Tests_Short_Name\[GSATEST-1] As a Consumer, I want to go to a website for information - IMC USAC JIRA Portal.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Tests_Short_Name\[GSATEST-2] As a Consumer, I want to search for the most frequent events for a drug - IMC USAC JIRA Portal.pdf
+C:documentation\scrum_process\JIRA_Contents\Sprint_1\Tests_Short_Name\[GSATEST-3] As a Consumer, I want to be able to see the most frequent adverse - IMC USAC JIRA Portal.pdf
+C:documentation\scrum_process\Photos\Daily Stand Up\Standup 1.jpg
+C:documentation\scrum_process\Photos\Daily Stand Up\Standup 2.jpg
+C:documentation\scrum_process\Photos\Dev Team\Alan Shreyas Sachin .jpg
+C:documentation\scrum_process\Photos\Dev Team\Amrita Atul.jpg
+C:documentation\scrum_process\Photos\Dev Team\Amrita.jpg
+C:documentation\scrum_process\Photos\Dev Team\Dipti Shreyas Sachin Parul.jpg
+C:documentation\scrum_process\Photos\Dev Team\Matt+Amrita.jpg
+C:documentation\scrum_process\Photos\Dev Team\Parul Joseph Sachin Dipti Tom.jpg
+C:documentation\scrum_process\Photos\Dev Team\Sachin.jpg
+C:documentation\scrum_process\Photos\Dev Team\Shreyas Dipti Sachin.jpg
+C:documentation\scrum_process\Photos\Dev Team\Shreyas+Parul.jpg
+C:documentation\scrum_process\Photos\Dev Team\Shreyas.jpg
+C:documentation\scrum_process\Photos\Pair Programming\Alan+Shreyas.jpg
+C:documentation\scrum_process\Photos\Pair Programming\Shreyas Alan Enoch.jpg
+C:documentation\scrum_process\Photos\Sprint Review\Alan Shreyas Sachin Parul Tom.jpg
+C:documentation\scrum_process\Photos\Sprint Review\Sprint 1 Review.jpg
+C:drivers\chromedriver.exe
+C:drivers\IEDriverServer.exe
+C:lib\rxeffex-xsd.jar
+C:lib\rxeffex.jar
+C:lib\selenium-server-standalone-2.45.0.jar
+C:lib\xbean.jar
+C:lib\xbean_xpath.jar
+C:lib\xmlbeans-qname.jar
+C:lib\xmlpublic.jar
+C:tests\automatic\automatic_test_scripts_Go Here.txt
+C:tests\automatic\Events.java
+C:tests\automatic\runtest.bat
+C:tests\automatic\rxeffex.xml
+C:tests\manual\GSATEST-1_EF10.docx
+C:tests\manual\GSATEST-2_Ef11.docx
+C:tests\manual\GSATEST-3_EF12.docx
+C:tests\manual\GSATEST-4_EF13.docx
+C:tests\manual\manual_test_scripts_Go Here.txt
+C:tests\unit\Unit_Test_Case_01.docx
+C:tests\unit\Unit_Test_Case_02.docx
+C:tests\unit\Unit_Test_Case_03.docx
+C:tests\unit\Unit_Test_Case_04.docx
+C:tests\unit\Unit_Test_Case_05.docx
+C:tests\unit\Unit_Test_Case_06.docx
+C:tests\unit\Unit_Test_Case_07.docx
+C:tests\unit\Unit_Test_Case_08.docx
+C:tests\usability\test_Docs_Go Here.txt
+C:WebContent\consumer.html
+C:WebContent\favicon.ico
+C:WebContent\index.html
+C:WebContent\maintainence.html
+C:WebContent\rxeffex-test.xsd
+C:WebContent\css\consumer.css
+C:WebContent\css\index.css
+C:WebContent\css\maintainence.css
+C:WebContent\css\fonts\glyphicons-halflings-regular.eot
+C:WebContent\css\fonts\glyphicons-halflings-regular.svg
+C:WebContent\css\fonts\glyphicons-halflings-regular.ttf
+C:WebContent\css\fonts\glyphicons-halflings-regular.woff
+C:WebContent\css\fonts\glyphicons-halflings-regular.woff2
+C:WebContent\css\lib\bootstrap.css
+C:WebContent\css\lib\carousel.css
+C:WebContent\css\lib\jquery-ui.css
+C:WebContent\css\lib\jquery-ui.structure.css
+C:WebContent\css\lib\jquery-ui.theme.css
+C:WebContent\css\lib\images\ui-bg_flat_75_ffffff_40x100.png
+C:WebContent\css\lib\images\ui-bg_glass_75_dadada_1x400.png
+C:WebContent\css\min\consumer.min.css
+C:WebContent\css\min\index.min.css
+C:WebContent\css\min\maintainence.min.css
+C:WebContent\css\min\lib\bootstrap.min.css
+C:WebContent\css\min\lib\carousel.min.css
+C:WebContent\css\min\lib\jquery-ui.min.css
+C:WebContent\css\min\lib\jquery-ui.structure.min.css
+C:WebContent\css\min\lib\jquery-ui.theme.min.css
+C:WebContent\css\min\lib\images\ui-bg_flat_75_ffffff_40x100.png
+C:WebContent\css\min\lib\images\ui-bg_glass_75_dadada_1x400.png
+C:WebContent\img\18fimage1.gif
+C:WebContent\img\18fimage1.png
+C:WebContent\img\18fimage2.gif
+C:WebContent\img\18fimage3.gif
+C:WebContent\img\18flogo.png
+C:WebContent\img\carousel_pic04.jpg
+C:WebContent\js\consumer.js
+C:WebContent\js\lib\bootstrap.js
+C:WebContent\js\lib\carousel.js
+C:WebContent\js\lib\d3.v3.min.js
+C:WebContent\js\lib\jquery-ui.js
+C:WebContent\js\lib\listgroup.js
+C:WebContent\js\lib\transition.js
+C:WebContent\js\min\consumer.min.js
+C:WebContent\js\min\lib\bootstrap.min.js
+C:WebContent\js\min\lib\carousel.min.js
+C:WebContent\js\min\lib\jquery-ui.min.js
+C:WebContent\js\min\lib\listgroup.min.js
+C:WebContent\js\min\lib\transition.min.js
+C:WebContent\META-INF\MANIFEST.MF
+158 File(s) copied
+[workspace] $ cmd /c call C:\apache-tomcat-8.0.23\temp\hudson342741340395128991.bat
+
+C:\.jenkins\jobs\rxeffex\workspace>C:\.jenkins\jobs\rxeffex\workspace\tests\automatic\runtest.bat C:\.jenkins\jobs\rxeffex\workspace jenkins-rxeffex-38 
+
+C:\.jenkins\jobs\rxeffex\workspace>REM Run the regresstion test 
+
+C:\.jenkins\jobs\rxeffex\workspace>REM Parameter 1 - Jenkins Workspace 
+
+C:\.jenkins\jobs\rxeffex\workspace>REM Parameter 2 - Test Reports Directory 
+
+C:\.jenkins\jobs\rxeffex\workspace>cd C:\.jenkins\jobs\rxeffex\workspace\tests\automatic 
+
+C:\.jenkins\jobs\rxeffex\workspace\tests\automatic>java -cp C:\.jenkins\jobs\rxeffex\workspace/lib/* com.rxeffex.test.RegressionTestDriver rxeffex.xml C:\.jenkins\jobs\rxeffex\workspace/drivers jenkins-rxeffex-38 
+Input File: rxeffex.xml
+Executing test case: Home Page
+Executing test case: Transition to Consumers Page
+Executing test case: Adverse Event Query
+Test reports are in: C:/TestOutput/2015-07-01/imcjenkins15/jenkins-rxeffex-38.
+Rxeffex Regression Test completed.
+Finished: SUCCESS

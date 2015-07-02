@@ -1,0 +1,24 @@
+commit d5aa17dcd582501da8d4b7380177a9c946ddeee5
+tree 28efccf6c858658ea49447d1eed098a587b1a01d
+parent a2d6b4a0093f8a5fc07e6b5a219fdf83a55c4fec
+author dbhanose <dbhanose@imc.com> 1435694045 -0400
+committer dbhanose <dbhanose@imc.com> 1435694045 -0400
+
+    EIGHTEENF-29: Added unit test case to check the new FARES link
+    
+    EIGHTEENF-29: Added unit test case to check the new FARES link.
+
+:000000 100644 0000000000000000000000000000000000000000 a7ebccc4f158194cbd36ceb69f4bebc2942adcb2 A	tests/unit/Unit_Test_Case_08.docx
+
+commit b3ae3bddd29ebb7d7a16876fe0c9c9c310776f58
+tree 12117e490824502c91a6e8b830f2be1df1355170
+parent bc227eace0997408201ae2387f7e263c349cd378
+author dbhanose <dbhanose@imc.com> 1435266086 -0400
+committer dbhanose <dbhanose@imc.com> 1435266086 -0400
+
+    EIGHTEENF-11: EIGHTEENF-13: Added Reset Unit Test
+    
+    EIGHTEENF-11: EIGHTEENF-13: Added Unit Test to check functionality of
+    Reset All Fields button on consumer webpage.
+
+:000000 100644 0000000000000000000000000000000000000000 87299afed8e51f59143afca67f0771c945d5b8f7 A	tests/unit/Unit_Test_Case_07.docx

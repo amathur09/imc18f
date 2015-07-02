@@ -1,0 +1,78 @@
+commit 5266ec14a7d01bff2a4a32e500f3dc828dd507aa
+tree c5b791085a1e06b77aea706c9e2e491b6b71d61f
+parent 85587f27033619a063049f34089c217e9bada038
+author amritanayak <anayak@imc.com> 1435785702 -0400
+committer amritanayak <anayak@imc.com> 1435785702 -0400
+
+    EIGHTEENF-5 : Updated Readme file
+    
+    EIGHTEENF-5 : Added more content to the Readme file
+
+:100644 100644 7d1cf2d78919bbaa28e4953b42d314678a55f1d8 b2ed8c34ade72595231c529b81245f9aaa55f8b7 M	README.md
+
+commit 85587f27033619a063049f34089c217e9bada038
+tree 37c1ce2db928747ed18485c13b0669b24525036c
+parent bfeef628a35cda92f7e4388e0092ce0bc4cdf280
+author amritanayak <anayak@imc.com> 1435785553 -0400
+committer amritanayak <anayak@imc.com> 1435785553 -0400
+
+    EIGHTEENF-5 : Updated Daily Progress Document
+    
+    EIGHTEENF-5 : Updated Daily Progress Document
+    with day-to-day activities
+
+:100644 100644 c202fad2fc57161f38fe5106eae4727865350972 150b7625a2008c075d058e67badfb2dd61bd3ed2 M	documentation/Daily Progress.docx
+
+commit bfeef628a35cda92f7e4388e0092ce0bc4cdf280
+tree ccb0359564d133cc721e403582e684233fb0588f
+parent 6ffafff5dfa2ddcacfa7bb3ab50fdf8dc4865c87
+author amritanayak <anayak@imc.com> 1435785204 -0400
+committer amritanayak <anayak@imc.com> 1435785204 -0400
+
+    EIGHTEENF-5 : Added the Application Installation Guide
+    
+    EIGHTEENF-5 : Added the Application Installation Guide
+
+:000000 100644 0000000000000000000000000000000000000000 e6d2915fa34096347a06eea91f7fadb3ea457f14 A	documentation/Installation/Application Installation Guide.docx
+
+commit f6bc8ffaa30ab2162fc727f33c5d2b323e61b766
+tree 435ba05c46c9d3f31321e047f89399366b3a1827
+parent 1c4208d225c365ae7e04d27e7f61eda8166162a9
+author shreyas <shreyaspatil@imc.com> 1435784511 -0400
+committer shreyas <shreyaspatil@imc.com> 1435784511 -0400
+
+    EIGHTEENF-35 : Make a Google form and provide a link to it in the footer
+    so user can give feedback about the website.
+
+:100644 100644 f8f2ac4a6bca3cf59b4057d8fbc9ff22bf437fb7 96ebf2c6e13470226bc87b2ed182036321c36a85 M	WebContent/consumer.html
+:100644 100644 04bb5f1044aa327bca38cb358886ca7e8bb9ac7b b8c4c1148d0ea414787980cef5f9c57d3e7b2125 M	WebContent/css/lib/carousel.css
+:000000 100644 0000000000000000000000000000000000000000 00c32d5be637628059c11b4ca44c3ba0e4d86a05 A	WebContent/img/18fimage1.jpg
+:000000 100644 0000000000000000000000000000000000000000 48eec48810bb23b7e1397c1321d77697dba82a3c A	WebContent/img/18fimage2.jpg
+:000000 100644 0000000000000000000000000000000000000000 1ea33c58463e2a7101912524ef2628a2b8ef02e1 A	WebContent/img/18fimage3.jpg
+:100644 100644 927393b7afb3b846eb4ab079bede697b80dc0d90 bba0f1ecf9d52b56150f491ea194a346dac10f36 M	WebContent/img/18flogo.png
+:100644 100644 bef1f2541dc85415c0cebe0543617fc2052d058d 74bbf62af1154a2a822af84ccc87b4a9061e1fe4 M	WebContent/img/carousel_pic04.jpg
+:100644 100644 83ec4e040b8d790f300817602c9df56d6da9fa27 01ea103ce42ef89126c7740d2faf7046211aa28e M	WebContent/index.html
+:100644 100644 f88375acfaeb1cafb3c51c4be2c474db50809026 6d01eaf86e5a9dcce2d3f399d5725bb160edd444 M	WebContent/js/consumer.js
+:100644 100644 f0e320de1ad779cdb203bd05c9a58e11d0116ebd 5e39ad594b21359f198b153de183e682c8b496bb M	WebContent/maintainence.html
+
+commit 6ffafff5dfa2ddcacfa7bb3ab50fdf8dc4865c87
+tree 61791f94a1205bf2c4a03954b8e2bf3a43ad58a4
+parent a53d5e73eddc5a8ae5fc895567831d961133d9dc
+author amritanayak <anayak@imc.com> 1435782856 -0400
+committer amritanayak <anayak@imc.com> 1435782856 -0400
+
+    EIGHTEENF-5 : Added JIRA attachments from Sprint 1
+    
+    EIGHTEENF-5 : Added JIRA attachments from Sprint 1 Issues
+
+:000000 100644 0000000000000000000000000000000000000000 b34f373d2bac0e76a0544378f836dfb0ed6f05e2 A	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues_Short_Name/Attachments/EIGHTEENF-10/M1.jpg
+:000000 100644 0000000000000000000000000000000000000000 80b1ea934496393b2fd8a51d34980bbe3dafdedb A	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues_Short_Name/Attachments/EIGHTEENF-11/M2.jpg
+:000000 100644 0000000000000000000000000000000000000000 8c06389fbf894204b538dbd0d27d50dbe1c67c88 A	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues_Short_Name/Attachments/EIGHTEENF-12/M3.jpg
+:000000 100644 0000000000000000000000000000000000000000 ce55faeddca19f529df6e808e3d008a55ff9e567 A	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues_Short_Name/Attachments/EIGHTEENF-13/M4.jpg
+:000000 100644 0000000000000000000000000000000000000000 b34f373d2bac0e76a0544378f836dfb0ed6f05e2 A	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues_Short_Name/Attachments/EIGHTEENF-2/18fhomepage.jpg
+:000000 100644 0000000000000000000000000000000000000000 c34ec1868c736c5cf1a7884ca012454308faf3f4 A	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues_Short_Name/Attachments/EIGHTEENF-2/18flogo.gif
+:000000 100644 0000000000000000000000000000000000000000 13f672ed51864b2d71c254b745436cdb6f596a85 A	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues_Short_Name/Attachments/EIGHTEENF-2/18fsecondpage.jpg
+:000000 100644 0000000000000000000000000000000000000000 13a97e07eb4c59ecb42b0ecb224a985c54ec1dd2 A	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues_Short_Name/Attachments/EIGHTEENF-2/18fvisualrep.png
+:000000 100644 0000000000000000000000000000000000000000 95a0394dba51c6f807a332c9d942f675ef1ae02a A	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues_Short_Name/Attachments/EIGHTEENF-7/18F Prototype IMC Inc Prototype Review with User Jim Glass.pdf
+:000000 100644 0000000000000000000000000000000000000000 c84494a44d9fe999b365c325dfbe86c1f7bfe850 A	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues_Short_Name/Attachments/EIGHTEENF-7/18F Prototype IMC Inc User Exploration - PatientsLikeMe.pdf
+:000000 100644 0000000000000000000000000000000000000000 5641b52e427e41497af78291b6a275239e48f0b0 A	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues_Short_Name/Attachments/EIGHTEENF-7/18F Prototype IMC Inc User Exploration with Jim Glass.docx

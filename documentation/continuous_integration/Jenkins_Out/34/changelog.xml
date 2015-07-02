@@ -1,0 +1,9 @@
+commit 9127baf634f676e54c89ad5a66fd2a743fb7dd71
+tree a03b2f004e3ea27cde64d2a103a730799d3a2c69
+parent 49fb23e5404af5f6aefea7332a0935c23ce12d55
+author mkillmeyer <mkillmeyer@imc.com> 1435698113 -0400
+committer mkillmeyer <mkillmeyer@imc.com> 1435698113 -0400
+
+    EIGHTEENF-5 : Added new directory for iterative approach.
+
+:100644 100644 bcae6bb717b0cd14f8431da75b72e8148025dc62 bcae6bb717b0cd14f8431da75b72e8148025dc62 R100	documentation/scrum_process/Iterative_Appoach/Docs_Go Here.txt	documentation/scrum_process/Iterative Approach/Docs_Go Here.txt

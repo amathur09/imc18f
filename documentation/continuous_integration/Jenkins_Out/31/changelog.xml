@@ -1,0 +1,25 @@
+commit fb603effeef1223b5b6ffc8a66c5f1e3f8046758
+tree e028856228eedd7ccf4b14727e082a098a63f7c9
+parent d22e9d3030ade29326a4c9b0950cccb302adff79
+author amritanayak <anayak@imc.com> 1435695684 -0400
+committer amritanayak <anayak@imc.com> 1435695684 -0400
+
+    EIGHTEENF-5 : Updated Daily Progress document
+    
+    EIGHTEENF-5 : Added more day-to-day activities to the Daily Progress
+    document
+
+:100644 100644 bec8f7192df7da65bf355a4b814d0a8212fcedc4 c202fad2fc57161f38fe5106eae4727865350972 M	documentation/Daily Progress.docx
+
+commit 2cab3b5637a5ccd15a13feaeb44c9efcaa654126
+tree 31ad196a88cf50051f9922b94a5929c18be4ede1
+parent 1bd189203c99f7dbb8753c300920f1871a21b2e3
+author amritanayak <anayak@imc.com> 1435691979 -0400
+committer amritanayak <anayak@imc.com> 1435691979 -0400
+
+    EIGHTEENF-5 : Updated Readme file
+    
+    EIGHTEENF-5 : Added more content to the Readme file based on the
+    development pool criteria
+
+:100644 100644 aa37409765a8796722b6ec3cbd840447ec1ced7a bffb9b6534274d66419fb77f1699f0d9167ae522 M	README.md

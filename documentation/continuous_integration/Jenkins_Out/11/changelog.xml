@@ -1,0 +1,19 @@
+commit f7c6d5891bb8c032faaef98668d8de0e7aed2075
+tree 184557641dca73677b2f6aa8af32550543258563
+parent cbea2a7129330ec4ff7cd8b0c2edc9b239b8705f
+author mkillmeyer <mkillmeyer@imc.com> 1435607714 -0400
+committer mkillmeyer <mkillmeyer@imc.com> 1435607714 -0400
+
+    EIGHTEENF-5 : Deleted Folder and Files that were added to wrong directory.
+
+:100644 000000 b34f373d2bac0e76a0544378f836dfb0ed6f05e2 0000000000000000000000000000000000000000 D	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues/Attachments/EIGHTEENF-10/M1.jpg
+:100644 000000 80b1ea934496393b2fd8a51d34980bbe3dafdedb 0000000000000000000000000000000000000000 D	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues/Attachments/EIGHTEENF-11/M2.jpg
+:100644 000000 8c06389fbf894204b538dbd0d27d50dbe1c67c88 0000000000000000000000000000000000000000 D	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues/Attachments/EIGHTEENF-12/M3.jpg
+:100644 000000 ce55faeddca19f529df6e808e3d008a55ff9e567 0000000000000000000000000000000000000000 D	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues/Attachments/EIGHTEENF-13/M4.jpg
+:100644 000000 b34f373d2bac0e76a0544378f836dfb0ed6f05e2 0000000000000000000000000000000000000000 D	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues/Attachments/EIGHTEENF-2/18fhomepage.jpg
+:100644 000000 c34ec1868c736c5cf1a7884ca012454308faf3f4 0000000000000000000000000000000000000000 D	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues/Attachments/EIGHTEENF-2/18flogo.gif
+:100644 000000 13f672ed51864b2d71c254b745436cdb6f596a85 0000000000000000000000000000000000000000 D	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues/Attachments/EIGHTEENF-2/18fsecondpage.jpg
+:100644 000000 13a97e07eb4c59ecb42b0ecb224a985c54ec1dd2 0000000000000000000000000000000000000000 D	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues/Attachments/EIGHTEENF-2/18fvisualrep.png
+:100644 000000 95a0394dba51c6f807a332c9d942f675ef1ae02a 0000000000000000000000000000000000000000 D	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues/Attachments/EIGHTEENF-7/18F Prototype IMC Inc Prototype Review with User Jim Glass.pdf
+:100644 000000 c84494a44d9fe999b365c325dfbe86c1f7bfe850 0000000000000000000000000000000000000000 D	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues/Attachments/EIGHTEENF-7/18F Prototype IMC Inc User Exploration - PatientsLikeMe.pdf
+:100644 000000 5641b52e427e41497af78291b6a275239e48f0b0 0000000000000000000000000000000000000000 D	documentation/scrum_process/JIRA_Contents/Sprint_1/Issues/Attachments/EIGHTEENF-7/18F Prototype IMC Inc User Exploration with Jim Glass.docx
