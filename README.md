@@ -1,11 +1,16 @@
 README
 ======= 
 Prototype URL: [http://www.rxeffex.com](http://www.rxeffex.com)
+
 Git repository URL: [https://github.com/amathur09/imc18f](https://github.com/amathur09/imc18f) 
+
 Prototype Name: **rxEffex**
+
 Version: 0.25
 Last update: 7/1/2015
+
 Company: Information Management Consultants, Inc. (IMC), [http://www.imc.com/](http://www.imc.com/)
+
 
 IMC PROTOTYPE: **rxEffex**
 ---------------------
@@ -20,17 +25,22 @@ TECHNICAL APPROACH
 
 **Methodology**
 The team used an Agile Scrum methodology and the Atlassian JIRA tool in support of agile delivery, to manage the Product Backlog, log work performed and issues found, and to collaborate among the team members. We used pair programming, an agile software development technique, during development. We conducted Sprint Planning for 4 sprints based on the Product Backlog, selecting User Stories by business value of the functionality, as guided by the Product Manager, and story points . The team conducted Daily Stand Up Meetings and Sprints Reviews for Sprints 1 and 2. 
+
 **Design**
 IMC engaged our NIDA Client (Consulting Specialist) in our iterative approach in refining the prototype, beginning with requirements gathering through sprint reviews. Our team conducted a requirements gathering session with the Product Owner and our NIDA Client, both with expertise in adverse events. The Product Owner described the functioning of the prototype to the Web Designers and the Technical Architect to ensure it was viable. The Business Analyst worked with the Product Owner to develop User Stories. The Visual Designer collaborated with the Web Designers to create mockups of the graphical user interface. The Web Designers used these mockups to design the website. The team collaborated with the NIDA client by reviewing the prototype and enabling feedback. The prototype was refined daily with each feedback
 Each page of the prototype website was designed with the user in mind, with easy-to-use navigation, menu bars, and text entry for visual representation of the data. The website is clean and simple in its design so as not to overwhelm the user and to assure the user gets to the right place in the least amount of time. Wireframes of the design were created using a web builder platform and then provided to the Web Designers for coding and function requirements.  The images  were selected based on subject relevance and used to add some visual continuity to each page. 
+
 **Development**
 IMC followed proven DevOps industry best practices to remove the friction between developing and releasing code. Our goal was to deploy a fully tested and fully functional version of each application at a moment’s notice, with the ability to roll quickly back to a previous version.
 Our automated delivery process began with continuous integration. We required the Web Designers to integrate code into a shared repository several times a day and enforced the frequency of code check-in. The continuous integration server verified each check-in through an automated build, allowing the team to detect problems early. Following the Agile practice of continuous testing, we also ran a suite of automated regression and unit tests at every build. This allowed us to find regression or integration issues early before they became a technical debt or buried under hundreds of other code changes. Continuous integration and testing not only improved the quality of the system, but also provided the added benefit of informing the Product Owner if a particular version was deployable. IMC used Jenkins and Maven for continuous integration and to automate the execution of test scripts in Selenium. 
 The Web Designers used the pair programming technique, working in tandem to build the code for the prototype. They continuously conducted review sessions with the Product Owner and the Technical Architect to make sure the prototype matched the requirements. They involved the Visual Designer while designing the website to match the mockups created. The Business Analyst coordinated with both the Web Designers and Product Owner to make sure the user stories reflected the prototype being built. The Documentation Specialist worked with team members to document all activities. The Documentation Specialist also created the Readme file and other supporting documentation and ensured it was committed into the Git repository. The Agile Coach monitored each of these activities, providing support and removing obstacles when needed.
+
 **Testing**
 The Testers worked with the Web Designers and the Business Analyst to create Test Cases from the User Stories. All the Test Cases are linked to the User Stories to maintain traceability. Unit, functional, system, integration and regression tests are performed. Zephyr, a JIRA plug in tool, is used for test case development and execution. The manual tests performed during the sprints are automated with Selenium. The Testers discuss an issues or defects found during testing with the Web Developers and enter them into  JIRA. 
+
 **Implementation**
 IMC uses an Amazon Web Services (AWS) EC2 instance as the base infrastructure to deploy the prototype. Infrastructure level security controls including FedRAMP and FISMA are satisfied by AWS and IMC ensures application and data level security. The website runs on HTTPS protocol over SSL. For source code control, IMC team used Github as the repository to deliver the code and associated artifacts to GSA. 
+
 **Full Stack Pool Evidence**
 We describe below how we have met all of the evaluation criteria (a to q) for the Full Stack Pool. Supporting evidence is provided in the GitHub repository via the link provided above. 
 The structure of the GitHub repository evolved with each meeting conducted. We met early on and crafted the structure of the repository and then refined the structure daily. We created three main folders: 
