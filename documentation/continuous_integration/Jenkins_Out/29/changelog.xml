@@ -1,0 +1,21 @@
+commit 688e27b56f97b6d0ca33d1fb067e7741cd5f00c0
+tree 0952040b7f0390b1d323a967f52f98528ee0f010
+parent 43b2f60ba70b51ac387cabc17caf361acaf86234
+author shreyas <shreyaspatil@imc.com> 1435692071 -0400
+committer shreyas <shreyaspatil@imc.com> 1435692071 -0400
+
+    EIGHTEENF-28 : changing the build number
+
+:100644 100644 90b9d6317b9ba7e4e1264b8a2b6bd3e68e2127e2 e242e308407ec3968abb679e1ce8ef89ff8aa67c M	WebContent/index.html
+
+commit 43b2f60ba70b51ac387cabc17caf361acaf86234
+tree 7031e41656d0dfc18f05c6f1de7ae5239b46bf8c
+parent 086d1986d2112863a3b7699a36319eca13a938e5
+author shreyas <shreyaspatil@imc.com> 1435691963 -0400
+committer shreyas <shreyaspatil@imc.com> 1435691963 -0400
+
+    EIGHTEENF-28 : adding the Go-Daddy certificate in the footer.
+
+:100644 100644 f4d140870fd213e32036b2f6af664b91f407a284 4d02e60d952cf04cc4096711a8948bc1786044b4 M	WebContent/consumer.html
+:100644 100644 cb5b7606538095f03f9933e214bffb34ec74c3a4 90b9d6317b9ba7e4e1264b8a2b6bd3e68e2127e2 M	WebContent/index.html
+:100644 100644 31b81c9422930b4258b7146c8f805e04c99e5670 0c1b3f898d51a56391f2b271426211a8f5f73382 M	WebContent/maintainence.html

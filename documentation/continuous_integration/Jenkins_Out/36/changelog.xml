@@ -1,0 +1,12 @@
+commit 305e17046b0a2d22b75b209d8af927e43e4d595d
+tree a3801f49fbe311896c3a8c6a92c9f514bfdb81b3
+parent 07aa555fb3d48c3ccbd6c80e5a2cf26d182eb2da
+author WChuang <WChuang@imc.com> 1435751882 -0400
+committer WChuang <WChuang@imc.com> 1435751882 -0400
+
+    EIGHTEENF-4 : Passing Jenkins variables to Selenium
+
+:100644 100644 ba7d994692dc00b01321baa150f07839f87550ea 994395e38abda0dd1ed0f1c49e0f0837a9c1b41c M	lib/rxeffex-xsd.jar
+:100644 100644 7d39c5dbfffc904f4b3272345beb507cbc2b9b21 05aedac86637e7db46673a3fd6bc8ad135b0af7a M	lib/rxeffex.jar
+:100644 100644 ca7b1c12bcb63f2f1c4eebaa3d093783e5aaf897 4b540be7d7d901b8b9911b8fd9de16fcb7bd3add M	tests/automatic/runtest.bat
+:100644 100644 ef191fd2c0f07e2c80a240f5c379a861da74655b 61c84da474c4db21c35c5b710cafb28b1afb10f2 M	tests/automatic/rxeffex.xml

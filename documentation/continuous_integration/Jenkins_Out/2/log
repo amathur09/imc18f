@@ -1,0 +1,69 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace C:\.jenkins\jobs\FDA-Demo\workspace
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/amathur09/imc18f.git # timeout=10
+Fetching upstream changes from https://github.com/amathur09/imc18f.git
+ > git.exe --version # timeout=10
+ > git.exe -c core.askpass=true fetch --tags --progress https://github.com/amathur09/imc18f.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 3ccd0becc6c226d8e256dcbe86db86ab900ec01b (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 3ccd0becc6c226d8e256dcbe86db86ab900ec01b
+ > git.exe rev-list 3ccd0becc6c226d8e256dcbe86db86ab900ec01b # timeout=10
+[workspace] $ cmd /c call C:\apache-tomcat-8.0.23\temp\hudson4285376632795276416.bat
+
+C:\.jenkins\jobs\FDA-Demo\workspace>c:\fdademo\build.bat
+
+C:\.jenkins\jobs\FDA-Demo\workspace>REM Pull Code from GitHub, build, and deploy to Tomcat 
+
+C:\.jenkins\jobs\FDA-Demo\workspace>cd c:\.jenkins\jobs\FDA-Demo\workspace\WebContent 
+
+c:\.jenkins\jobs\FDA-Demo\workspace\WebContent>jar -cvf 18f.war * 
+added manifest
+adding: consumer.jsp(in = 5790) (out= 1995)(deflated 65%)
+adding: css/(in = 0) (out= 0)(stored 0%)
+adding: css/consumer.css(in = 1105) (out= 469)(deflated 57%)
+adding: css/fonts/(in = 0) (out= 0)(stored 0%)
+adding: css/fonts/glyphicons-halflings-regular.eot(in = 20127) (out= 20038)(deflated 0%)
+adding: css/fonts/glyphicons-halflings-regular.svg(in = 108738) (out= 26799)(deflated 75%)
+adding: css/fonts/glyphicons-halflings-regular.ttf(in = 45404) (out= 23366)(deflated 48%)
+adding: css/fonts/glyphicons-halflings-regular.woff(in = 23424) (out= 23170)(deflated 1%)
+adding: css/fonts/glyphicons-halflings-regular.woff2(in = 18028) (out= 18038)(deflated 0%)
+adding: css/index.css(in = 39) (out= 34)(deflated 12%)
+adding: css/lib/(in = 0) (out= 0)(stored 0%)
+adding: css/lib/bootstrap.css(in = 146933) (out= 21005)(deflated 85%)
+adding: css/lib/carousel.css(in = 2728) (out= 933)(deflated 65%)
+adding: css/lib/jquery-ui.css(in = 35324) (out= 8123)(deflated 77%)
+adding: css/lib/jquery-ui.structure.css(in = 18015) (out= 5375)(deflated 70%)
+adding: css/lib/jquery-ui.theme.css(in = 17396) (out= 3007)(deflated 82%)
+adding: css/maintainence.css(in = 23) (out= 25)(deflated -8%)
+adding: img/(in = 0) (out= 0)(stored 0%)
+adding: img/18fimage1.gif(in = 3419) (out= 3424)(deflated 0%)
+adding: img/18fimage2.gif(in = 3358) (out= 3363)(deflated 0%)
+adding: img/18fimage3.gif(in = 3093) (out= 3098)(deflated 0%)
+adding: img/18flogo.png(in = 26021) (out= 25683)(deflated 1%)
+adding: img/carouselPic_01.jpg(in = 8206643) (out= 8206830)(deflated 0%)
+adding: img/carouselPic_01.png(in = 17444116) (out= 17447992)(deflated 0%)
+adding: img/carouselPic_02.jpg(in = 2879631) (out= 2878821)(deflated 0%)
+adding: img/carousel_pic04.jpg(in = 1903904) (out= 1871287)(deflated 1%)
+adding: index.jsp(in = 4506) (out= 1661)(deflated 63%)
+adding: js/(in = 0) (out= 0)(stored 0%)
+adding: js/consumer.js(in = 13539) (out= 3409)(deflated 74%)
+adding: js/index.js(in = 88) (out= 85)(deflated 3%)
+adding: js/lib/(in = 0) (out= 0)(stored 0%)
+adding: js/lib/bootstrap.js(in = 66732) (out= 13622)(deflated 79%)
+adding: js/lib/carousel.js(in = 7121) (out= 2107)(deflated 70%)
+adding: js/lib/jquery-ui.js(in = 464435) (out= 111976)(deflated 75%)
+adding: js/lib/listgroup.js(in = 5593) (out= 1376)(deflated 75%)
+adding: js/lib/transition.js(in = 1831) (out= 713)(deflated 61%)
+adding: maintainence.jsp(in = 2386) (out= 973)(deflated 59%)
+ignoring entry META-INF/
+ignoring entry META-INF/MANIFEST.MF
+
+c:\.jenkins\jobs\FDA-Demo\workspace\WebContent>copy 18f.war C:\apache-tomcat-8.0.23\webapps 
+        1 file(s) copied.
+
+c:\.jenkins\jobs\FDA-Demo\workspace\WebContent>del /Q 18f.war 
+Finished: SUCCESS
