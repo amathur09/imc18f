@@ -1,0 +1,34 @@
+commit aca810c670b1e5f09aa868966ce3d73faf3e1cdc
+tree c69c5d9779098a7240ac242621df1541ea65b210
+parent 967918b502e678bf68c747074d1b5319c26eaf32
+author dbhanose <dbhanose@imc.com> 1435861478 -0400
+committer dbhanose <dbhanose@imc.com> 1435861478 -0400
+
+    EIGHTEENF-28: Added Unit test case to verify that website is generated with https.
+    
+    EIGHTEENF-28: Added Unit test case to verify that website is generated
+    with https.
+
+:000000 100644 0000000000000000000000000000000000000000 28e5ed93dada261a97f18b9ac14f68e97868a2b3 A	tests/unit/Unit_Test_Case_10.docx
+
+commit 9bd14adfe41583ac1baf789503e0cfea5491bb68
+tree 46cb87e83bf368d143bb978609b8caeb4df7463e
+parent 32f179b7b6bbbd0711a3983925041ac09b13feb8
+author amritanayak <anayak@imc.com> 1435860759 -0400
+committer amritanayak <anayak@imc.com> 1435860759 -0400
+
+    EIGHTEENF-5 : Updated Readme
+    
+    EIGHTEENF-5 : Updated Readme and formatted the content
+
+:100644 100644 b2ed8c34ade72595231c529b81245f9aaa55f8b7 bc66d053ef0c03c531c8a46cd81df48aa5292bc9 M	README.md
+
+commit cbe7f3e6d9ee1f3b8f0479e93173c79b5d17d3fb
+tree 2255d7342b0c5a25e92cc54e5d3457e70597da96
+parent a8898d424bfe9ab598ea24915157caafb0de5c45
+author shreyas <shreyaspatil@imc.com> 1435860606 -0400
+committer shreyas <shreyaspatil@imc.com> 1435860606 -0400
+
+    EIGHTEENF-37 : Changed the loading order of the javascript.
+
+:100644 100644 37681e476ca694fd212babae6292c34b07263897 1d6491e92453edecc0cd12679d9c482a42ad0513 M	WebContent/consumer.html

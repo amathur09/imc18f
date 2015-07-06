@@ -1,0 +1,121 @@
+commit c921fb27cc86bb5f3ff4e1264bb22945a6d3c739
+tree 1cb3267fb6bf40f50bd9e7ee415cbc0d9ed1b427
+parent 26df7d570e09f083c3f3ec6489aecc03b4795fcd
+author dbhanose <dbhanose@imc.com> 1435864921 -0400
+committer dbhanose <dbhanose@imc.com> 1435864921 -0400
+
+    EIGHTEENF-35: Added Unit test to verify that user can provide a feedback.
+    
+    EIGHTEENF-35: Added Unit test to verify that user provide a feedback on
+    website by clicking the link on footer.
+
+:000000 100644 0000000000000000000000000000000000000000 7d09c0c9599e1b0daa3e58d58772e6c92ec68462 A	tests/unit/Unit_Test_Case_11.docx
+
+commit f2c960f91afaa418d711bb054bf7d83ecbe67936
+tree fe50ae82207b45e8b07f08b3621b0e24e1a547b9
+parent 6e5d7899c6fa4b3be77217158c653072a876ede5
+author amritanayak <anayak@imc.com> 1435864855 -0400
+committer amritanayak <anayak@imc.com> 1435864855 -0400
+
+    EIGHTEENF-5 : Updated Daily Progress document
+    
+    EIGHTEENF-5 : Updated Daily Progress document
+    with day-to-day activities
+
+:100644 100644 150b7625a2008c075d058e67badfb2dd61bd3ed2 4bd77beaedda1aa057aebcf2e38539b96d86aee4 M	documentation/Daily Progress.docx
+
+commit 9b02c4b85f9cad09c2e94eaac6977341624d8424
+tree e4c8af059d94b2551f9251a397c3558e12aadfc1
+parent 79699fd5ae7237ce5cdcc54784b977d13105dc5c
+author parulpatel <ppatel@imc.com> 1435864834 -0400
+committer parulpatel <ppatel@imc.com> 1435864834 -0400
+
+    EIGHTEENF - Automated test script for Consumer page
+    
+    EIGHTEENF - Automated test script for Consumer page
+
+:000000 100644 0000000000000000000000000000000000000000 171d9bb0f4a534bb0681e199b0bec45ed73d7448 A	tests/automatic/Consumers.java
+
+commit 79699fd5ae7237ce5cdcc54784b977d13105dc5c
+tree ffac08322e44a5c7bc81d53c441c70878683a550
+parent 058f18144e075c79cf5c9fb2173c34676a29513d
+author parulpatel <ppatel@imc.com> 1435864094 -0400
+committer parulpatel <ppatel@imc.com> 1435864094 -0400
+
+    EIGHTEENF-28 Added Test Case
+    
+    EIGHTEENF-28 Added Test Case
+
+:000000 100644 0000000000000000000000000000000000000000 1b2e01b64c3c8f3e1bcca5e04a1297b6f1f7451e A	tests/manual/[GSATEST-6] As an organization, I want all the communication on the website to be encrypted_EIGHTEENF-28 - IMC USAC JIRA Portal.pdf
+
+commit 058f18144e075c79cf5c9fb2173c34676a29513d
+tree bb20037edc03bb8f0a123d28f3907dad4cff0fdf
+parent 9af881b7f707a1a2a9b0a1f1b257dc5488a380ba
+author parulpatel <ppatel@imc.com> 1435863779 -0400
+committer parulpatel <ppatel@imc.com> 1435863779 -0400
+
+    EIGHTEENF-27 Added Test Case
+    
+    EIGHTEENF-27 Added Test Case
+
+:000000 100644 0000000000000000000000000000000000000000 a38c28cf2a97a2c1d2e3e50b9bdbcb47b13f518d A	tests/manual/[GSATEST-5] As a consumer, I want a site that is compatible with Android and IOS operating systems_EIGHTEENF-27 - .pdf
+
+commit 9af881b7f707a1a2a9b0a1f1b257dc5488a380ba
+tree 25a1a6c90ebb9b924f5e1e0480caf6b83ad63521
+parent a7e1b82f2828916ae00ae3d7be5b5fcb9af52cec
+author parulpatel <ppatel@imc.com> 1435863470 -0400
+committer parulpatel <ppatel@imc.com> 1435863470 -0400
+
+    EIGHTEENF-29 Added test case
+    
+    EIGHTEENF-29 Added test case
+
+:000000 100644 0000000000000000000000000000000000000000 f3bea22c964b9c2946300c435101e9ac7faf57f4 A	tests/manual/[GSATEST-7] As a consumer, I would like a web link to the source for the data used to generate the adverse event counts_EIGHTEENF-29 .pdf
+
+commit a7e1b82f2828916ae00ae3d7be5b5fcb9af52cec
+tree d4bbeaf730cc3c69b1dccc4a2e0dbb0c9df80972
+parent c72b4302efb40b06726c4605cc2b0082b8cb9dfa
+author parulpatel <ppatel@imc.com> 1435862922 -0400
+committer parulpatel <ppatel@imc.com> 1435862922 -0400
+
+    Eighteenf_34 Added Test case_GSATEST -8
+    
+    Eighteenf_34 Added Test case_GSATEST -8
+
+:000000 100644 0000000000000000000000000000000000000000 b182a9282fe9f95e59bb3e045e565a2ce870ef05 A	tests/manual/[GSATEST-8] As a user, I want improved peformance of the website_EIGHTEENF-34 - .pdf
+
+commit 14daa7e53992971b3ef02fcfb22485a0410a2902
+tree b82e12646cb9c069ab378fc66fd30e8d5e7a2c1a
+parent 995f57b03a11b90f74748ea6cabd1b6fa3a8ba42
+author shreyas <shreyaspatil@imc.com> 1435862587 -0400
+committer shreyas <shreyaspatil@imc.com> 1435862587 -0400
+
+    EIGHTEENF-34 : right align the menu when it opens on a mobile device.
+    add a reference to bootstrap js on the maintainence page so a menu can
+    appear on that page.
+
+:100644 100644 f16d6b2607bae1f23b9ed6c7b2e05b12d762a329 a68174277319bf26180ed95cf958bbc894274bd6 M	WebContent/css/lib/bootstrap.css
+:100644 100644 9fd413b3a520b2805a3edd70a5608cd6154ed873 15dce7c609025bb5fe7677f643a10dbd48206011 M	WebContent/css/min/lib/bootstrap.min.css
+:100644 100644 92aeae07df2fc2e6343bf01e58a06f50b26bf02e 1bd638e43bb6ab4558ebf40571e34ab25c91fbd7 M	WebContent/maintainence.html
+
+commit 6e5d7899c6fa4b3be77217158c653072a876ede5
+tree dc5b5952b9343dcefe2577e07b78f4bcea2bb2c2
+parent 8ca3278462419a6ad3ce81af93958c9ebb8bd25f
+author amritanayak <anayak@imc.com> 1435862335 -0400
+committer amritanayak <anayak@imc.com> 1435862335 -0400
+
+    EIGHTEENF-5 : Formatted Readme file
+    
+    EIGHTEENF-5 : Formatted Readme file
+
+:100644 100644 bc66d053ef0c03c531c8a46cd81df48aa5292bc9 b8c8a0b722e6e9ff7e7c6f8e6bdc4e420ea93929 M	README.md
+
+commit c72b4302efb40b06726c4605cc2b0082b8cb9dfa
+tree 670883a6ddd5e0709bd0045de285f19b27bf9b35
+parent 82b930d8b679c244a97c7116fd8edaf3c96ccfa0
+author parulpatel <ppatel@imc.com> 1435862290 -0400
+committer parulpatel <ppatel@imc.com> 1435862290 -0400
+
+    Eighteenf
+
+:000000 100644 0000000000000000000000000000000000000000 ae808a6f4739c4808115213134af20d39ed6ceae A	tests/manual/[GSATEST-9] As a customer, I want the ability to provide feedback on the website_EIGHTEENF-35.pdf

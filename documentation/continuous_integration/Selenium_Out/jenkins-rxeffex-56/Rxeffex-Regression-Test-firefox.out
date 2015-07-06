@@ -1,0 +1,56 @@
+Rxeffex Regression Test
+
+Scenario:	Rxeffex Home Page
+
+===================
+Test Case:			Home Page
+Test URL:			https://rxeffex.com
+Passed:			true
+Start Time:		07/02/2015 12:04:07.476
+End Time:			07/02/2015 12:04:09.801
+Time Limit:		0 (ms)
+Duration:			2325 (ms)
+Inputs
+Expected Values
+	Field:	//*[@id="navbar"]/ul/li[1]/a		Expected Value:	Home		Notes:	
+	Field:	//*[@id="navbar"]/ul/li[2]/a		Expected Value:	Consumers		Notes:	
+	Field:	//*[@id="rxEffexIndexpageCaousel"]/div/div/div/div/h1		Expected Value:	Committed to transparency for adverse events		Notes:	
+Message:			
+Screenshot:		screenshot-Home-Page.png
+===================
+
+===================
+Test Case:			Transition to Consumers Page
+Test URL:			https://rxeffex.com
+Passed:			true
+Start Time:		07/02/2015 12:04:09.801
+End Time:			07/02/2015 12:04:10.908
+Time Limit:		0 (ms)
+Duration:			1107 (ms)
+Inputs
+	Field:	//*[@id="navbar"]/ul/li[2]/a		Value:			Notes:	
+Expected Values
+	Field:	/html/body/div[2]/div[1]/div[2]/div/h2		Expected Value:	Consumers		Notes:	
+Message:			
+Screenshot:		screenshot-Transition-to-Consumers-Page.png
+===================
+
+===================
+Test Case:			Adverse Event Query
+Test URL:			https://rxeffex.com/consumer.html
+Passed:			true
+Start Time:		07/02/2015 12:04:10.908
+End Time:			07/02/2015 12:04:12.499
+Time Limit:		0 (ms)
+Duration:			1591 (ms)
+Inputs
+	Field:	//*[@id="inputSearchCriteria"]		Value:	aspirin		Notes:	
+	Field:	//*[@id="seriousSignificant"]		Value:			Notes:	
+	Field:	//*[@id="divOutcomes"]/ul/a[4]		Value:			Notes:	
+	Field:	//*[@id="generateChartButton"]		Value:			Notes:	
+Expected Values
+	Field:	/html/body/div[2]/div[2]/div[2]/div[2]/div/*[name()='svg']/*[name()='g']/*[name()='text']		Expected Value:	702		Notes:	
+Message:			
+Screenshot:		screenshot-Adverse-Event-Query.png
+===================
+

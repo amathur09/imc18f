@@ -1,0 +1,11 @@
+commit cae96e840d3ba03328ec84d77679f615764a2da1
+tree 9affe5f636848a604f63740560a4cbfbe5af2eb3
+parent 1ffe43d15413286481661e08a417f134c70ff6c3
+author amritanayak <anayak@imc.com> 1436200883 -0400
+committer amritanayak <anayak@imc.com> 1436200883 -0400
+
+    EIGHTEENF-5 : Added AWS and CI document
+    
+    EIGHTEENF-5 : Added AWS and CI document
+
+:000000 100644 0000000000000000000000000000000000000000 5a811a76a3dda89cb11da9020127c8d4cdfa1ce6 A	documentation/continuous_integration/AWS and CI.DOCX

@@ -1,0 +1,10 @@
+commit 536bbc1b42597dace4e7fef4fb289d77cf729668
+tree 298c1dfa4d44ed1f83522caa68609dddd34669cd
+parent de9ceeff6394b14b1ecace37823bd56a3ee8f0fd
+author mkillmeyer <mkillmeyer@imc.com> 1436201341 -0400
+committer mkillmeyer <mkillmeyer@imc.com> 1436201341 -0400
+
+    EIGHTEENF-5 : Added updated team list document.
+
+:000000 100644 0000000000000000000000000000000000000000 87714551c169b018ace4c0ae823aa355299bb6ed A	documentation/GSA Agile Delivery Services RFQ IMC Response Team.docx
+:100644 100644 4cbb6f704bdf8e055b787fbb395498acbfd9211d 87714551c169b018ace4c0ae823aa355299bb6ed M	documentation/scrum_process/GSA Agile Delivery Services RFQ IMC Response Team.docx

@@ -1,0 +1,13 @@
+commit 4b15090c14bfc87fce0bb5f05f6194dc1b694867
+tree 76e0662657193c04f0ef29b4a981e20dda969473
+parent 3171afaf202851b0de30aa4078f240a7437fa1d4
+author mkillmeyer <mkillmeyer@imc.com> 1435859965 -0400
+committer mkillmeyer <mkillmeyer@imc.com> 1435859965 -0400
+
+    EIGHTEENF-2: Optimized the Images to support better load performance.
+
+:100644 100644 86a0893f2122b75122509d064b5b9ec72593621f b17b9dd46adc626830df9c849747b2a35d07264a M	WebContent/img/18fimage1.jpg
+:100644 100644 61484b9d13b4746ada06e449654adfb06e7d5d87 3640c2ce3c31507cd50bb206ef49b92dac181c58 M	WebContent/img/18fimage2.jpg
+:100644 100644 5643d56ebf51de5079fa7b4bc9a6adfe7819d19c c9dfff6599d26cf6ab9f85d6e5fa46dc7269fac2 M	WebContent/img/18fimage3.jpg
+:100644 100644 bba0f1ecf9d52b56150f491ea194a346dac10f36 f2241108ff2a5b38aea762915376664594034906 M	WebContent/img/18flogo.png
+:100644 100644 564a29ee704a88137cbfb0a37ab161aca4d7f7a6 9f81259161ea6a484a0462595392a87fec7e5f11 M	WebContent/img/carousel_pic04.jpg

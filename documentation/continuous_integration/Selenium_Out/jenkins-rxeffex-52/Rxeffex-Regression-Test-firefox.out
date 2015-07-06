@@ -1,0 +1,56 @@
+Rxeffex Regression Test
+
+Scenario:	Rxeffex Home Page
+
+===================
+Test Case:			Home Page
+Test URL:			https://rxeffex.com
+Passed:			true
+Start Time:		07/02/2015 14:00:03.175
+End Time:			07/02/2015 14:00:05.468
+Time Limit:		0 (ms)
+Duration:			2293 (ms)
+Inputs
+Expected Values
+	Field:	//*[@id="navbar"]/ul/li[1]/a		Expected Value:	Home		Notes:	
+	Field:	//*[@id="navbar"]/ul/li[2]/a		Expected Value:	Consumers		Notes:	
+	Field:	//*[@id="rxEffexIndexpageCaousel"]/div/div/div/div/h1		Expected Value:	Committed to transparency for adverse events		Notes:	
+Message:			
+Screenshot:		screenshot-Home-Page.png
+===================
+
+===================
+Test Case:			Transition to Consumers Page
+Test URL:			https://rxeffex.com
+Passed:			true
+Start Time:		07/02/2015 14:00:05.468
+End Time:			07/02/2015 14:00:06.466
+Time Limit:		0 (ms)
+Duration:			998 (ms)
+Inputs
+	Field:	//*[@id="navbar"]/ul/li[2]/a		Value:			Notes:	
+Expected Values
+	Field:	/html/body/div[2]/div[1]/div[2]/div/h2		Expected Value:	Consumers		Notes:	
+Message:			
+Screenshot:		screenshot-Transition-to-Consumers-Page.png
+===================
+
+===================
+Test Case:			Adverse Event Query
+Test URL:			https://rxeffex.com/consumer.html
+Passed:			false
+Start Time:		07/02/2015 14:00:06.466
+End Time:			07/02/2015 14:00:07.558
+Time Limit:		0 (ms)
+Duration:			1092 (ms)
+Inputs
+	Field:	//*[@id="inputSearchCriteria"]		Value:	aspirin		Notes:	Could not locate the field.
+	Field:	//*[@id="seriousSignificant"]		Value:			Notes:	Could not locate the field.
+	Field:	//*[@id="divOutcomes"]/ul/a[4]		Value:			Notes:	Could not locate the field.
+	Field:	//*[@id="generateChartButton"]		Value:			Notes:	Could not locate the field.
+Expected Values
+	Field:	/html/body/div[2]/div[2]/div[2]/div[2]/div/*[name()='svg']/*[name()='g']/*[name()='text']		Expected Value:	702		Notes:	Could not locate the field.
+Message:			
+Screenshot:		screenshot-Adverse-Event-Query.png
+===================
+

@@ -1,0 +1,11 @@
+commit 4ce97306124005c999e193ad8f100c31e7bd6abb
+tree 79ed2ff4d9a4b0463f02c0e5dd44ebf00ef63ac3
+parent d70385780c4d579449f7e9341bb5b0ff7c4f329a
+author parulpatel <ppatel@imc.com> 1436205972 -0400
+committer parulpatel <ppatel@imc.com> 1436205972 -0400
+
+    EIGHTEENF-34 - Updated Test Case_GSATEST -8
+    
+    EIGHTEENF-34 - Updated Test Case_GSATEST -8
+
+:100644 100644 b182a9282fe9f95e59bb3e045e565a2ce870ef05 deff9d42399f957f627799897ad5d3d1dfe9b74d M	tests/manual/[GSATEST-8] As a user, I want improved peformance of the website_EIGHTEENF-34 - .pdf
