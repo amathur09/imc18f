@@ -1,0 +1,22 @@
+commit d3836de9f8e496863c835fecd94bac3672e3aa4b
+tree 247c8a78ec55f15f955d82947e7e836265def35e
+parent 4b15090c14bfc87fce0bb5f05f6194dc1b694867
+author mkillmeyer <mkillmeyer@imc.com> 1435860166 -0400
+committer mkillmeyer <mkillmeyer@imc.com> 1435860166 -0400
+
+    EIGHTEENF-2: Optimized the Images to support better load performance.
+
+:100644 100644 9f81259161ea6a484a0462595392a87fec7e5f11 63857a730eda60e58187de0e707c6798c80e8322 M	WebContent/img/carousel_pic04.jpg
+
+commit 1f38d7264101e19aa427b878d7d62546659dc885
+tree d123865cb2a74cd43a4b126643b56bacb7e2aea3
+parent 2825cb6a78965f320f0504d1a55acf0b39d056d5
+author amritanayak <anayak@imc.com> 1435859407 -0400
+committer amritanayak <anayak@imc.com> 1435859407 -0400
+
+    EIGHTEENF-29 : Added unit test case to check website's compatibility with Android and IOS devices
+    
+    EIGHTEENF-29 : Added unit test case to check website's compatibility
+    with Android and IOS devices
+
+:000000 100644 0000000000000000000000000000000000000000 fdd4a6aa756f5b08c5436d1dfe38f652b8ec4186 A	tests/unit/Unit_Test_Case_09.docx

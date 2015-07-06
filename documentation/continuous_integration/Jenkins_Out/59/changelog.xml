@@ -1,0 +1,54 @@
+commit 3685f5a0ebeda14d1e8a936e2ebd2d54864791c8
+tree d35425fc1710bf61fcbc8482a853e4f4255703d2
+parent 116c2306442d209ce811c70093eca4ecb7724858
+author parulpatel <ppatel@imc.com> 1436199045 -0400
+committer parulpatel <ppatel@imc.com> 1436199045 -0400
+
+    EIGHTEENF - Added test case 5 for Sprint 2
+    
+    EIGHTEENF - Added test case for Sprint 2
+
+:000000 100644 0000000000000000000000000000000000000000 a38c28cf2a97a2c1d2e3e50b9bdbcb47b13f518d A	documentation/scrum_process/JIRA_Contents/Sprint_1/Tests_Short_Name/[GSATEST-5] As a consumer, I want a site that is compatible with Android and IOS operating systems_EIGHTEENF-27 .pdf
+
+commit 116c2306442d209ce811c70093eca4ecb7724858
+tree 7d03d949e514f5a1a8f96e39d26f3ea6aa1e3f94
+parent 846369f13a13afe8f40c17d117996d66361a6093
+author parulpatel <ppatel@imc.com> 1436198644 -0400
+committer parulpatel <ppatel@imc.com> 1436198644 -0400
+
+    EIGHTEENF- Added Test case for sprint 1
+    
+    EIGHTEENF- Added Test case for sprint 1
+
+:000000 100644 0000000000000000000000000000000000000000 4c83ea7c7086112babc55bca8eb17da2c9c141d1 A	documentation/scrum_process/JIRA_Contents/Sprint_1/Tests_Short_Name/Sprint 1 Test Report - IMC Zephyr Portal.pdf
+:000000 100644 0000000000000000000000000000000000000000 3da3b6a9839c378f0a80811ddae7c0634bd20803 A	documentation/scrum_process/JIRA_Contents/Sprint_1/Tests_Short_Name/[GSATEST-4] As a Consumer, I want to display a graph based on filters I selected_EIGHTEENF-13  .pdf
+
+commit a7ceeaabf2d7dd2640700d26eed173ea028e6ee3
+tree 80195fefb7cac770947269eb56a99422f2257b45
+parent 39c8755d0ee94ed9885838c09945ce37c606fbbb
+author amritanayak <anayak@imc.com> 1436198443 -0400
+committer amritanayak <anayak@imc.com> 1436198443 -0400
+
+    EIGHTEENF-5 : Added more photos
+    
+    EIGHTEENF-5 : Created a folder for Testing and added more photos
+
+:000000 100644 0000000000000000000000000000000000000000 964176bb50fe4974ae96f2068f12d8333851ed3b A	documentation/scrum_process/Photos/Daily Stand Up/Sprint 2 Standup.jpg
+:000000 100644 0000000000000000000000000000000000000000 014a4d45851446e6f39290d6b6cf834a09403ecf A	documentation/scrum_process/Photos/Testing/Dipti Shreyas Sachin Parul.jpg
+:000000 100644 0000000000000000000000000000000000000000 37031ae1b82f78b20a7f63ff485bc43818024fae A	documentation/scrum_process/Photos/Testing/Shreyas Dipti Sachin.jpg
+:000000 100644 0000000000000000000000000000000000000000 d9aef94c2811286c8ccabb453bd91813c274b306 A	documentation/scrum_process/Photos/Testing/Shreyas+Parul.jpg
+
+commit 447e0d019b6477ba7adbe79fee279dc4093f890b
+tree 9a209af7348b42e33552c0a1d61c09a68c14547a
+parent cf4d6a9f69457d6906f0ee8e392012bd4ee309f3
+author shreyas <shreyaspatil@imc.com> 1436196662 -0400
+committer shreyas <shreyaspatil@imc.com> 1436196662 -0400
+
+    EIGHTEENF-27: added a margin on top to the the content on the
+    maintainence page so it can be viewwed properly on a mobile device.
+
+:100644 100644 c3853583362d81742c692e98e11292581d2ad156 ab44d6f37e5795f44fca9c03cb5c43b936da4946 M	WebContent/css/consumer.css
+:100644 100644 2c8671d569cd38d1b312b34983b986139472dc20 b598e3ffd23920cbfe86ee91fd7088c83256b1ae M	WebContent/css/maintainence.css
+:100644 100644 65986d3556eff15a47f37e41a36d35aba2e47562 33e7d5b05e2311c00b44442c5eb2c442d58eeb4d M	WebContent/css/min/consumer.min.css
+:100644 100644 4ca9186cb3ec2c9e0c39049dee2ea8d218b2e695 b912e9c32788587c5e4649206abb87e107dda507 M	WebContent/css/min/maintainence.min.css
+:100644 100644 1bd638e43bb6ab4558ebf40571e34ab25c91fbd7 4b559be27723ea3c0b99b203afdf5cc84c644a85 M	WebContent/maintainence.html

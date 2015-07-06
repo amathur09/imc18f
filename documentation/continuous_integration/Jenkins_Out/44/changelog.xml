@@ -1,0 +1,10 @@
+commit 5f5d5619fb67a452b0db6a08344194d206e53a61
+tree e87f5e66caa955b9b0d07268c799fa9285579e0a
+parent 7906323bf5f0f7fe90f4d59b6cda56e286f1fbd7
+author WChuang <WChuang@imc.com> 1435852812 -0400
+committer WChuang <WChuang@imc.com> 1435852812 -0400
+
+    EIGHTEENF-4 : Moved Selenium scripts to the continuous integration folder under documentation
+
+:100644 100644 4b540be7d7d901b8b9911b8fd9de16fcb7bd3add ec018f30b10e112bd8ce5ec1357cbad16ce2c3fd R059	tests/automatic/runtest.bat	documentation/continuous_integration/jenkins/runtest.bat
+:100644 100644 61c84da474c4db21c35c5b710cafb28b1afb10f2 61c84da474c4db21c35c5b710cafb28b1afb10f2 R100	tests/automatic/rxeffex.xml	documentation/continuous_integration/jenkins/rxeffex.xml

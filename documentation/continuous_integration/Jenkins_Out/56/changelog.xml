@@ -1,0 +1,9 @@
+commit d8851941e3bea2a365eaff84ec9ae6780d0d8e1d
+tree 2710dd3fc63725ded57615e8fa96935fdac6a19f
+parent d3836de9f8e496863c835fecd94bac3672e3aa4b
+author mkillmeyer <mkillmeyer@imc.com> 1435860485 -0400
+committer mkillmeyer <mkillmeyer@imc.com> 1435860485 -0400
+
+    EIGHTEENF-2: Optimized the Images to support better load performance.
+
+:100644 100644 63857a730eda60e58187de0e707c6798c80e8322 f28e10b0ea436c9de0beedaa3c35f06828cb1d43 M	WebContent/img/carousel_pic04.jpg
