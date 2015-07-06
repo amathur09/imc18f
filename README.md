@@ -32,12 +32,14 @@ We describe below how we meet all of the evaluation criteria (a to q) for the Fu
 Our team crafted the GitHub repository structure early on, creating five main folders: 
 
  - WebContent contains the code
- - Documentation contains all the supporting documents and evidence for the work performede
+ - Documentation contains all the supporting documents and evidence for the work performed
  - Test contains all of the test scripts 
-and resultse
- - Drivers contains Selenium  drivers - Lib contains Jenkins variables passed to Selenium 	 - a, b. We assigned a Certified Scrum Master and Project Management Professional as the Prototype Leader/Agile Coach with full authority, responsibility, and accountability to the IMC Vice President of Technology for the quality of the prototype. We assembled a fully qualified team of 11 resources across 9 labor categories to form a multidisciplinary and collaborative team comprised of a Leader/Agile Coach, Product Manager, Architect, Developers, Testers, Documentation Specialist, Visual Designer, and Analyst. All roles report directly to the Leader/Agile Coach.
-c. We included our Product Manager and User in information gathering , User Story creation, and the prototype development and design process.
-d. Our human-centered designed techniques and tools included:		 - Using JIRA as a collaboration tool for the team to communicate and understand needs, and to log Product Backlog, work performed, and issues found;	 - Gathering requirements for user stories; 
+and results
+ - Drivers contains Selenium  drivers
+ - Lib contains Jenkins variables passed to Selenium.
+	 - a, b. We assigned a Certified Scrum Master and Project Management Professional as the Prototype Leader/Agile Coach with full authority, responsibility, and accountability to the IMC Vice President of Technology for the quality of the prototype. We assembled a fully qualified team of 11 resources across 9 labor categories to form a multidisciplinary and collaborative team comprised of a Leader/Agile Coach, Product Manager, Architect, Developers, Testers, Documentation Specialist, Visual Designer, and Analyst. All roles report directly to the Leader/Agile Coach.
+	 - c. We included our Product Manager and User in information gathering , User Story creation, and the prototype development and design process.
+	 - d. Our human-centered designed techniques and tools included:		 - Using JIRA as a collaboration tool for the team to communicate and understand needs, and to log Product Backlog, work performed, and issues found;	 - Gathering requirements for user stories; 
 		 - Creating wireframes in WIX; 
 		 - Using an iterative approach with the Product Manager and User for continuous improvement.	 - e. Our Developers followed the Style Guide developed by our Visual Designer with the user in mind.
 	 - f. Usability tests were continuously performed by testers and casual users, independent of the development team. 
