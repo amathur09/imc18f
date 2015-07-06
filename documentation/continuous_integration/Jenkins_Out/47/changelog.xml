@@ -1,0 +1,11 @@
+commit f0e77b8d311653df3a12f888323c4ffd94f8f313
+tree 6535157a34cc44cd44d1caa4a07738eefcaeaa8c
+parent 51b3d16c5ed94e8439ffdcf32649300ad7850549
+author amritanayak <anayak@imc.com> 1435855588 -0400
+committer amritanayak <anayak@imc.com> 1435855588 -0400
+
+    EIGHTEENF-5 : Updated Application Installation Guide
+    
+    EIGHTEENF-5 : Updated Application Installation Guide
+
+:100644 100644 e6d2915fa34096347a06eea91f7fadb3ea457f14 cfcb2ebb7587beae89b0b223a88176ae395fa04a M	documentation/Installation/Application Installation Guide.docx

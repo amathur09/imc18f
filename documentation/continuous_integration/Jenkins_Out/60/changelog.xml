@@ -1,0 +1,23 @@
+commit 36d367029d946d0ef9a4fe0c88b67f3813f3fb62
+tree 3a3caa76b2a92c9e23b734d6482aee1a8dad56d3
+parent 8212f4ce11bf6121d49a8dcdf9056ee000f05273
+author parulpatel <ppatel@imc.com> 1436199536 -0400
+committer parulpatel <ppatel@imc.com> 1436199536 -0400
+
+    EIGHTEENF - Added Test Case 7 for Sprint 2
+    
+    EIGHTEENF - Added Test Case 7 for Sprint 2
+
+:000000 100644 0000000000000000000000000000000000000000 f3bea22c964b9c2946300c435101e9ac7faf57f4 A	documentation/scrum_process/JIRA_Contents/Sprint_1/Tests_Short_Name/[GSATEST-7] As a consumer, I would like a web link to the source for the data used to generate the adverse event counts _EIGHTEENF-29 .pdf
+
+commit 8212f4ce11bf6121d49a8dcdf9056ee000f05273
+tree f65ccc67a6616c2ba709772059a46d2d97ae96c8
+parent 3685f5a0ebeda14d1e8a936e2ebd2d54864791c8
+author parulpatel <ppatel@imc.com> 1436199346 -0400
+committer parulpatel <ppatel@imc.com> 1436199346 -0400
+
+    EIGHTEENF - Added Test Case 6 for Sprint 2
+    
+    EIGHTEENF - Added Test Case 6 for Sprint 2
+
+:000000 100644 0000000000000000000000000000000000000000 1b2e01b64c3c8f3e1bcca5e04a1297b6f1f7451e A	documentation/scrum_process/JIRA_Contents/Sprint_1/Tests_Short_Name/[GSATEST-6] As an organization, I want all the communication on the website to be encrypted_EIGHTEENF-28 .pdf

@@ -1,0 +1,8 @@
+Started on Jul 2, 2015 1:09:53 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 102e8645346671931a0d82e977fb86f5904ff4db (refs/remotes/origin/master)
+ > git.exe --version # timeout=10
+ > git.exe -c core.askpass=true ls-remote -h https://github.com/amathur09/imc18f.git # timeout=10
+[poll] Latest remote head revision on origin/master is: 33a47154ab32be3091939b22a81a6f02fbca31d8
+Done. Took 0.2 sec
+Changes found

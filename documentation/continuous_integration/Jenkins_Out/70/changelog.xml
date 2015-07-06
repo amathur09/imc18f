@@ -1,0 +1,10 @@
+commit 16e300c07f676f56f79338b0bfd0cf51b26a4afb
+tree 517ef4dca9b8a212a2eb3e0d3a18b94ff763a182
+parent ae4d28a5ef9945784aebb6f043ece6ad7b2e9191
+author mkillmeyer <mkillmeyer@imc.com> 1436209775 -0400
+committer mkillmeyer <mkillmeyer@imc.com> 1436209775 -0400
+
+    EIGHTEENF-5 : Added iterative approach / collaboration JIRA emails.
+
+:100644 000000 bcae6bb717b0cd14f8431da75b72e8148025dc62 0000000000000000000000000000000000000000 D	documentation/scrum_process/Iterative Approach/Docs_Go Here.txt
+:000000 100644 0000000000000000000000000000000000000000 5e20b749f175c9441a423083d268aed3b3d55890 A	documentation/scrum_process/Iterative Approach/JIRA Emails-Collaboration.pst

@@ -1,0 +1,11 @@
+commit e0ac675af442385e9210c04fba44fb2cd69f80e3
+tree 6ff8a2e557d688f3a3c231283f8e9f09127d7242
+parent 24c074686ad0cffd4a450a4570b4b40331679b5d
+author parulpatel <ppatel@imc.com> 1436199715 -0400
+committer parulpatel <ppatel@imc.com> 1436199715 -0400
+
+    EIGHTEENF - Added Test Case 8 for Sprint 2
+    
+    EIGHTEENF - Added Test Case 8 for Sprint 2
+
+:000000 100644 0000000000000000000000000000000000000000 b182a9282fe9f95e59bb3e045e565a2ce870ef05 A	documentation/scrum_process/JIRA_Contents/Sprint_1/Tests_Short_Name/[GSATEST-8] As a user, I want improved peformance of the website_EIGHTEENF-34 - .pdf

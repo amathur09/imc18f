@@ -1,0 +1,9 @@
+commit de9ceeff6394b14b1ecace37823bd56a3ee8f0fd
+tree bc0babc590b1bb443f131af2d324a32faeeee17e
+parent 8c287deb1ecacd60afcdb0b5c7e8ccd99cdbedba
+author mkillmeyer <mkillmeyer@imc.com> 1436196822 -0400
+committer mkillmeyer <mkillmeyer@imc.com> 1436196822 -0400
+
+    Delete test_Docs_Go Here.txt
+
+:100644 000000 bcae6bb717b0cd14f8431da75b72e8148025dc62 0000000000000000000000000000000000000000 D	tests/usability/test_Docs_Go Here.txt

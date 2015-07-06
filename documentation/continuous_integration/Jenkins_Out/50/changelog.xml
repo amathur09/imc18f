@@ -1,0 +1,20 @@
+commit 68207d70612d25a46b1e6305bd3dcc5f87d29987
+tree 783f026294d59d935ac73c65d103b443e7b73537
+parent f6bc8ffaa30ab2162fc727f33c5d2b323e61b766
+author shreyas <shreyaspatil@imc.com> 1435858076 -0400
+committer shreyas <shreyaspatil@imc.com> 1435858076 -0400
+
+    EIGHTEENF-27 : changed the background of active links to transparent.
+    EIGHTEENF-36 : add https to the link of clinicaltrials.gov
+    EIGHTEENF-34 : add compressed images to improve performance.
+
+:100644 100644 96ebf2c6e13470226bc87b2ed182036321c36a85 37681e476ca694fd212babae6292c34b07263897 M	WebContent/consumer.html
+:100644 100644 ac8a685655e5dc995ff556f69079d912fecd8b35 f16d6b2607bae1f23b9ed6c7b2e05b12d762a329 M	WebContent/css/lib/bootstrap.css
+:100644 100644 492c050c35e51108e884b28283eb7446e0bb1602 9fd413b3a520b2805a3edd70a5608cd6154ed873 M	WebContent/css/min/lib/bootstrap.min.css
+:100644 100644 00c32d5be637628059c11b4ca44c3ba0e4d86a05 86a0893f2122b75122509d064b5b9ec72593621f M	WebContent/img/18fimage1.jpg
+:100644 100644 48eec48810bb23b7e1397c1321d77697dba82a3c 61484b9d13b4746ada06e449654adfb06e7d5d87 M	WebContent/img/18fimage2.jpg
+:100644 100644 1ea33c58463e2a7101912524ef2628a2b8ef02e1 5643d56ebf51de5079fa7b4bc9a6adfe7819d19c M	WebContent/img/18fimage3.jpg
+:100644 100644 74bbf62af1154a2a822af84ccc87b4a9061e1fe4 564a29ee704a88137cbfb0a37ab161aca4d7f7a6 M	WebContent/img/carousel_pic04.jpg
+:100644 100644 01ea103ce42ef89126c7740d2faf7046211aa28e e007e28544902ed6b02589d4ce1a39b18eb329b2 M	WebContent/index.html
+:100644 100644 6d01eaf86e5a9dcce2d3f399d5725bb160edd444 78115e7748c95bcf45c1ff0b2dfc07c1bd7963a5 M	WebContent/js/consumer.js
+:100644 100644 5e39ad594b21359f198b153de183e682c8b496bb 92aeae07df2fc2e6343bf01e58a06f50b26bf02e M	WebContent/maintainence.html
