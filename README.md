@@ -12,7 +12,7 @@ Company: Information Management Consultants, Inc. (IMC)
 IMC PROTOTYPE: **RxEffects**
 ---------------------
 
-IMC agile team has built our prototype for 18F, RxEffects, in the drug adverse events reporting domain. Our prototype uses the FDA dataset for adverse events to expand the current search functionality of the FDA site. It enables the public to search drug adverse events by drug name, significance, and/or serious outcomes, returning graphical results showing the number of records matching the filters chosen. Guided by user community feedback as well as our understanding, we developed this website on the commitment to transparency through effective communication. We envision three main user groups of the website – Consumers, Researchers, and Medical Professionals – each group with unique needs for data types, availability, and presentation.
+The IMC agile team has built our prototype for 18F, RxEffects, in the drug adverse events reporting domain. Our prototype uses the FDA dataset for adverse events to expand the current search functionality of the FDA site. It enables the public to search drug adverse events by drug name, significance, and/or serious outcomes, returning graphical results showing the number of records matching the filters chosen. Guided by user community feedback as well as our understanding, we developed this website on the commitment to transparency through effective communication. We envision three main user groups of the website – Consumers, Researchers, and Medical Professionals – each group with unique needs for data types, availability, and presentation.
 This prototype focuses on the Consumer as user. The home page welcomes the user with a description of the purpose and function of the website. The user selects the secondary Consumer page and interacts with the user interface to obtain the data of interest, entering the name of the drug to be searched, if applicable, and applying additional filters to learn the most frequent adverse effects by level of significance and serious outcome.
 TECHNICAL APPROACH
 ---------------------
@@ -31,9 +31,9 @@ The Testers worked with the Developers and Analyst to create Test Cases linked t
 
 IMC uses an Amazon Web Services (AWS) EC2 instance as the base infrastructure to deploy the prototype. Infrastructure level security controls including FedRAMP and FISMA are satisfied by AWS and IMC ensures application and data level security. The website runs on HTTPS protocol over SSL. Our team used GitHub as the repository to deliver the source code and associated documentation/evidence to 18F.
 
-**Full Stack Pool Evidence**
+**FULL STACK POOL EVIDENCE** : 
 We describe below how we meet all of the evaluation criteria (a to q) for the Full Stack Pool. Supporting evidence is provided in the GitHub repository via the link provided above. Attachment E provides the direct links to each specific item of evidence, consisting of documents, screen shots, photographs, and videos.
-Our team crafted the GitHub repository structure early on, creating five main folders: 
+Our team crafted the GitHub repository structure in five main folders: 
 
  - WebContent contains the code
  - Documentation contains all the supporting documents and evidence for the work performed
@@ -42,22 +42,22 @@ and results
  - Drivers contains Selenium  drivers
  - Lib contains Jenkins variables passed to Selenium.
 	 - a, b. We assigned a Certified Scrum Master and Project Management Professional as the Prototype Leader/Agile Coach with full authority, responsibility, and accountability to the IMC Vice President of Technology for the quality of the prototype. We assembled a fully qualified team of 10 resources across 9 labor categories to form a multidisciplinary and collaborative team comprised of a Leader/Agile Coach, Product Manager, Architect, Developers, Testers, Documentation Specialist, Visual Designer, and Analyst. All roles report directly to the Leader/Agile Coach.
-	 - c. We included our Product Manager and UCR in information gathering , User Story creation, and the prototype development and design process.
+	 - c. We included our Product Manager and UCR in information gathering , User Story creation, and the prototype development and design/development process.
 	 - d. Our human-centered designed techniques and tools included:		 - Using JIRA as a collaboration tool for the team to communicate and understand needs, and to log Product Backlog, work performed, and issues found;	 - Gathering requirements for user stories; 
 		 - Creating website mockups; 
 		 - Using an iterative approach with the Product Manager and UCR for continuous improvement.
 	 - e. Our Developers followed the Style Guide developed by our Visual Designer with the user in mind.
 	 - f. Usability tests were continuously performed by testers and casual users, independent of the development team. 
-	 - g. We followed an agile approach which enabled the Testers, Product Manager, and UCR to provide continuous inputs/feedback to the team throughout the process.
+	 - g. We followed an agile approach enabling the Testers, Product Manager, and UCR to provide continuous inputs/feedback to the team throughout the process.
 	 - h. The prototype design is responsive and compatible with iPhone and Android mobile devices.and compatible with iPhone and Android mobile devices.
-	 - i, q.  We used the following modern, free-of-charge open-source technologies in the prototype:		 - Apache Tomcat
+	 - i, q.  We used the following modern, free-of-charge open-source technologies in the prototype:		 - Tomcat
 		 - Selenium
 		 - Bootstrap
 		 - CSS framework
 		 - BootSwatchr.com
 		 - D3.js.org
 		 - Eclipse
-		 - git
+		 - GIT
 		 - jQuery/jQueryUI
 		 - Jenkins, and 
 		 - OpenSSL
