@@ -1,0 +1,101 @@
+Started by an SCM change
+Building in workspace C:\.jenkins\jobs\rxeffex\workspace
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/amathur09/imc18f.git # timeout=10
+Fetching upstream changes from https://github.com/amathur09/imc18f.git
+ > git.exe --version # timeout=10
+ > git.exe -c core.askpass=true fetch --tags --progress https://github.com/amathur09/imc18f.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 75398613acf667f083daf8608317ff3fd6a073f8 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 75398613acf667f083daf8608317ff3fd6a073f8
+ > git.exe rev-list 7555b5e83b2e6281d369850c4c9a8262983107a1 # timeout=10
+[workspace] $ cmd /c call C:\apache-tomcat-8.0.23\temp\hudson1654439886077369050.bat
+
+C:\.jenkins\jobs\rxeffex\workspace>c:\fdademo\buildw.bat C:\.jenkins\jobs\rxeffex\workspace 
+
+C:\.jenkins\jobs\rxeffex\workspace>REM Pull Code from GitHub, build, and deploy to Tomcat 
+
+C:\.jenkins\jobs\rxeffex\workspace>cd C:\.jenkins\jobs\rxeffex\workspace\WebContent 
+
+C:\.jenkins\jobs\rxeffex\workspace\WebContent>rmdir /S /Q C:\apache-tomcat-8.0.23\webapps\ROOT 
+
+C:\.jenkins\jobs\rxeffex\workspace\WebContent>mkdir C:\apache-tomcat-8.0.23\webapps\ROOT 
+
+C:\.jenkins\jobs\rxeffex\workspace\WebContent>xcopy /s /e * C:\apache-tomcat-8.0.23\webapps\ROOT 
+C:consumer.html
+C:favicon.ico
+C:index.html
+C:maintainence.html
+C:rxeffex-test.xsd
+C:css\consumer.css
+C:css\index.css
+C:css\maintainence.css
+C:css\fonts\glyphicons-halflings-regular.eot
+C:css\fonts\glyphicons-halflings-regular.svg
+C:css\fonts\glyphicons-halflings-regular.ttf
+C:css\fonts\glyphicons-halflings-regular.woff
+C:css\fonts\glyphicons-halflings-regular.woff2
+C:css\lib\bootstrap.css
+C:css\lib\carousel.css
+C:css\lib\jquery-ui.css
+C:css\lib\jquery-ui.structure.css
+C:css\lib\jquery-ui.theme.css
+C:css\lib\images\ui-bg_flat_75_ffffff_40x100.png
+C:css\lib\images\ui-bg_glass_75_dadada_1x400.png
+C:css\min\consumer.min.css
+C:css\min\index.min.css
+C:css\min\maintainence.min.css
+C:css\min\lib\bootstrap.min.css
+C:css\min\lib\carousel.min.css
+C:css\min\lib\jquery-ui.min.css
+C:css\min\lib\jquery-ui.structure.min.css
+C:css\min\lib\jquery-ui.theme.min.css
+C:css\min\lib\images\ui-bg_flat_75_ffffff_40x100.png
+C:css\min\lib\images\ui-bg_glass_75_dadada_1x400.png
+C:img\18fimage1.gif
+C:img\18fimage1.jpg
+C:img\18fimage1.png
+C:img\18fimage2.gif
+C:img\18fimage2.jpg
+C:img\18fimage3.gif
+C:img\18fimage3.jpg
+C:img\18flogo.png
+C:img\carousel_pic04.jpg
+C:js\consumer.js
+C:js\lib\bootstrap.js
+C:js\lib\carousel.js
+C:js\lib\d3.v3.min.js
+C:js\lib\jquery-ui.js
+C:js\lib\listgroup.js
+C:js\lib\transition.js
+C:js\min\consumer.min.js
+C:js\min\lib\bootstrap.min.js
+C:js\min\lib\carousel.min.js
+C:js\min\lib\jquery-ui.min.js
+C:js\min\lib\listgroup.min.js
+C:js\min\lib\transition.min.js
+C:META-INF\MANIFEST.MF
+53 File(s) copied
+[workspace] $ cmd /c call C:\apache-tomcat-8.0.23\temp\hudson7344469070643783504.bat
+
+C:\.jenkins\jobs\rxeffex\workspace>C:\.jenkins\jobs\rxeffex\workspace\documentation\continuous_integration\jenkins\runtest.bat C:\.jenkins\jobs\rxeffex\workspace jenkins-rxeffex-70 
+
+C:\.jenkins\jobs\rxeffex\workspace>REM Run the regression test 
+
+C:\.jenkins\jobs\rxeffex\workspace>REM Parameter 1 - Jenkins Workspace 
+
+C:\.jenkins\jobs\rxeffex\workspace>REM Parameter 2 - Test Reports Directory 
+
+C:\.jenkins\jobs\rxeffex\workspace>cd C:\.jenkins\jobs\rxeffex\workspace\documentation\continuous_integration\jenkins 
+
+C:\.jenkins\jobs\rxeffex\workspace\documentation\continuous_integration\jenkins>java -cp C:\.jenkins\jobs\rxeffex\workspace/lib/* com.rxeffex.test.RegressionTestDriver rxeffex.xml C:\.jenkins\jobs\rxeffex\workspace/drivers jenkins-rxeffex-70 
+Input File: rxeffex.xml
+Executing test case: Home Page
+Executing test case: Transition to Consumers Page
+Executing test case: Adverse Event Query
+Test reports are in: C:/TestOutput/2015-07-06/imcjenkins15/jenkins-rxeffex-70.
+Rxeffex Regression Test completed.
+Finished: SUCCESS

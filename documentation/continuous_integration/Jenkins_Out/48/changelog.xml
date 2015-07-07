@@ -1,0 +1,12 @@
+commit 920147d556c122322b1824d2e429aecfb80dddf4
+tree 13520dc0797f671a1fd96db750b2d867360c6e48
+parent f0e77b8d311653df3a12f888323c4ffd94f8f313
+author amritanayak <anayak@imc.com> 1435855924 -0400
+committer amritanayak <anayak@imc.com> 1435855924 -0400
+
+    EIGHTEENF-5 : Added Mobility Testing Videos
+    
+    EIGHTEENF-5 : Added Mobility Testing Videos for Android and iOS
+
+:000000 100644 0000000000000000000000000000000000000000 fc5ef11443de73927fe9488039962db4a491163b A	tests/usability/Android RxEffex Moblity Testing.mp4
+:000000 100644 0000000000000000000000000000000000000000 5976928fd36eb9b73fb00ec29c7a148df55494fa A	tests/usability/IOS RxEffex Moblity Testing.mov

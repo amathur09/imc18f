@@ -1,0 +1,11 @@
+commit b6813a7f4317d77965c2ebaf673cfdc2aaeeeb13
+tree d15aee87cc1c1b3568e0b7f7eaf2edaab13bfda3
+parent 48a709e413eee566586330a0fb90128907117806
+author amritanayak <anayak@imc.com> 1435856724 -0400
+committer amritanayak <anayak@imc.com> 1435856724 -0400
+
+    EIGHTEENF-5 : Updated AWS Basic Monitoring document
+    
+    EIGHTEENF-5 : Updated AWS Basic Monitoring Screenshots
+
+:100644 100644 64eb6cf9fda5ddde3b7461789de3831ec1c32449 291565b3d2053b736799c5f16ff9e180fe916208 M	documentation/continuous_integration/AWS Basic Monitoring.docx
